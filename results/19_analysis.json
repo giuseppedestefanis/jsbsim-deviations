@@ -1,0 +1,1339 @@
+{
+  "calibration": {
+    "regression": {
+      "false_alarm_per_output": 0.0271,
+      "p_unchanged_test_case_flagged": 0.304,
+      "p_unchanged_version_flagged": 1.0,
+      "flags_per_unchanged_test_case": 0.6
+    },
+    "envelope": {
+      "false_alarm_per_output": 0.0316,
+      "p_unchanged_test_case_flagged": 0.385,
+      "p_unchanged_version_flagged": 1.0,
+      "flags_per_unchanged_test_case": 0.7
+    },
+    "sig_dynamic": {
+      "false_alarm_per_output": 0.0526,
+      "p_unchanged_test_case_flagged": 0.652,
+      "p_unchanged_version_flagged": 1.0,
+      "flags_per_unchanged_test_case": 1.16
+    },
+    "sig_static": {
+      "false_alarm_per_output": 0.0488,
+      "p_unchanged_test_case_flagged": 0.546,
+      "p_unchanged_version_flagged": 1.0,
+      "flags_per_unchanged_test_case": 1.07
+    },
+    "ks": {
+      "false_alarm_per_output": 0.0463,
+      "p_unchanged_test_case_flagged": 0.498,
+      "p_unchanged_version_flagged": 1.0,
+      "flags_per_unchanged_test_case": 1.02
+    },
+    "iforest": {
+      "false_alarm_per_output": 0.0511,
+      "p_unchanged_test_case_flagged": 0.099,
+      "p_unchanged_version_flagged": 0.56,
+      "flags_per_unchanged_test_case": 1.12
+    }
+  },
+  "calibration_strict": {
+    "regression": {
+      "alpha": 0.002272727272727273,
+      "false_alarm_per_output": 0.0005,
+      "p_unchanged_test_case_flagged": 0.011,
+      "p_unchanged_version_flagged": 0.12,
+      "recall": 0.104,
+      "precision": 0.872
+    },
+    "envelope": {
+      "alpha": 0.002272727272727273,
+      "false_alarm_per_output": 0.0008,
+      "p_unchanged_test_case_flagged": 0.018,
+      "p_unchanged_version_flagged": 0.2,
+      "recall": 0.066,
+      "precision": 0.901
+    },
+    "sig_dynamic": {
+      "alpha": 0.002272727272727273,
+      "false_alarm_per_output": 0.002,
+      "p_unchanged_test_case_flagged": 0.044,
+      "p_unchanged_version_flagged": 0.44,
+      "recall": 0.04,
+      "precision": 0.712
+    },
+    "sig_static": {
+      "alpha": 0.002272727272727273,
+      "false_alarm_per_output": 0.002,
+      "p_unchanged_test_case_flagged": 0.037,
+      "p_unchanged_version_flagged": 0.36,
+      "recall": 0.043,
+      "precision": 0.741
+    },
+    "ks": {
+      "alpha": 0.002272727272727273,
+      "false_alarm_per_output": 0.0018,
+      "p_unchanged_test_case_flagged": 0.037,
+      "p_unchanged_version_flagged": 0.36,
+      "recall": 0.082,
+      "precision": 0.942
+    },
+    "iforest": {
+      "alpha": 0.002272727272727273,
+      "false_alarm_per_output": 0.0005,
+      "p_unchanged_test_case_flagged": 0.011,
+      "p_unchanged_version_flagged": 0.12,
+      "recall": 0.248,
+      "precision": 0.594
+    }
+  },
+  "version_level": {
+    "regression": {
+      "per_output_0.05": {
+        "unchanged_versions_flagged": "25/25",
+        "p_unchanged_version_ci95": [
+          0.863,
+          1.0
+        ],
+        "precision_no_inertia": 0.781,
+        "oracle_share": 0.691,
+        "oracle_share_no_inertia": 0.591,
+        "any_correct_flag_no_inertia": 0.715,
+        "reduction_no_inertia": 0.816,
+        "gated_precision": 0.261,
+        "share_flags_on_oracle_below_gate": 0.54,
+        "share_off_oracle_flags_moved": 0.156,
+        "any_correct_flag": 0.671,
+        "reduction": 0.847,
+        "p_unchanged_version_flagged": 1.0,
+        "false_flags_per_version": 6.52,
+        "p_unchanged_test_case_flagged": 0.304,
+        "recall": 0.178,
+        "precision": 0.801,
+        "gated_recall": 0.783
+      },
+      "bonferroni_version": {
+        "unchanged_versions_flagged": "0/25",
+        "p_unchanged_version_ci95": [
+          0.0,
+          0.137
+        ],
+        "precision_no_inertia": 0.935,
+        "oracle_share": 0.691,
+        "oracle_share_no_inertia": 0.591,
+        "any_correct_flag_no_inertia": 0.248,
+        "reduction_no_inertia": 0.97,
+        "gated_precision": 0.52,
+        "share_flags_on_oracle_below_gate": 0.422,
+        "share_off_oracle_flags_moved": 0.353,
+        "any_correct_flag": 0.222,
+        "reduction": 0.974,
+        "p_unchanged_version_flagged": 0.0,
+        "false_flags_per_version": 0.0,
+        "p_unchanged_test_case_flagged": 0.0,
+        "recall": 0.035,
+        "precision": 0.941,
+        "gated_recall": 0.259
+      },
+      "fdr_0.05_version": {
+        "unchanged_versions_flagged": "0/25",
+        "p_unchanged_version_ci95": [
+          0.0,
+          0.137
+        ],
+        "precision_no_inertia": 0.835,
+        "oracle_share": 0.691,
+        "oracle_share_no_inertia": 0.591,
+        "any_correct_flag_no_inertia": 0.517,
+        "reduction_no_inertia": 0.879,
+        "gated_precision": 0.367,
+        "share_flags_on_oracle_below_gate": 0.478,
+        "share_off_oracle_flags_moved": 0.198,
+        "any_correct_flag": 0.447,
+        "reduction": 0.903,
+        "p_unchanged_version_flagged": 0.0,
+        "false_flags_per_version": 0.0,
+        "p_unchanged_test_case_flagged": 0.0,
+        "recall": 0.118,
+        "precision": 0.844,
+        "gated_recall": 0.695
+      },
+      "fdr_0.10_version": {
+        "unchanged_versions_flagged": "0/25",
+        "p_unchanged_version_ci95": [
+          0.0,
+          0.137
+        ],
+        "precision_no_inertia": 0.818,
+        "oracle_share": 0.691,
+        "oracle_share_no_inertia": 0.591,
+        "any_correct_flag_no_inertia": 0.561,
+        "reduction_no_inertia": 0.859,
+        "gated_precision": 0.333,
+        "share_flags_on_oracle_below_gate": 0.496,
+        "share_off_oracle_flags_moved": 0.184,
+        "any_correct_flag": 0.486,
+        "reduction": 0.887,
+        "p_unchanged_version_flagged": 0.0,
+        "false_flags_per_version": 0.0,
+        "p_unchanged_test_case_flagged": 0.0,
+        "recall": 0.136,
+        "precision": 0.829,
+        "gated_recall": 0.737
+      },
+      "by_0.05_version": {
+        "unchanged_versions_flagged": "0/25",
+        "p_unchanged_version_ci95": [
+          0.0,
+          0.137
+        ],
+        "precision_no_inertia": 0.87,
+        "oracle_share": 0.691,
+        "oracle_share_no_inertia": 0.591,
+        "any_correct_flag_no_inertia": 0.427,
+        "reduction_no_inertia": 0.912,
+        "gated_precision": 0.446,
+        "share_flags_on_oracle_below_gate": 0.429,
+        "share_off_oracle_flags_moved": 0.219,
+        "any_correct_flag": 0.353,
+        "reduction": 0.931,
+        "p_unchanged_version_flagged": 0.0,
+        "false_flags_per_version": 0.0,
+        "p_unchanged_test_case_flagged": 0.0,
+        "recall": 0.087,
+        "precision": 0.875,
+        "gated_recall": 0.601
+      }
+    },
+    "envelope": {
+      "per_output_0.05": {
+        "unchanged_versions_flagged": "25/25",
+        "p_unchanged_version_ci95": [
+          0.863,
+          1.0
+        ],
+        "precision_no_inertia": 0.752,
+        "oracle_share": 0.691,
+        "oracle_share_no_inertia": 0.591,
+        "any_correct_flag_no_inertia": 0.618,
+        "reduction_no_inertia": 0.879,
+        "gated_precision": 0.381,
+        "share_flags_on_oracle_below_gate": 0.402,
+        "share_off_oracle_flags_moved": 0.18,
+        "any_correct_flag": 0.594,
+        "reduction": 0.895,
+        "p_unchanged_version_flagged": 1.0,
+        "false_flags_per_version": 7.6,
+        "p_unchanged_test_case_flagged": 0.385,
+        "recall": 0.119,
+        "precision": 0.783,
+        "gated_recall": 0.781
+      },
+      "bonferroni_version": {
+        "unchanged_versions_flagged": "1/25",
+        "p_unchanged_version_ci95": [
+          0.001,
+          0.204
+        ],
+        "precision_no_inertia": 0.959,
+        "oracle_share": 0.691,
+        "oracle_share_no_inertia": 0.591,
+        "any_correct_flag_no_inertia": 0.204,
+        "reduction_no_inertia": 0.98,
+        "gated_precision": 0.761,
+        "share_flags_on_oracle_below_gate": 0.204,
+        "share_off_oracle_flags_moved": 0.857,
+        "any_correct_flag": 0.187,
+        "reduction": 0.983,
+        "p_unchanged_version_flagged": 0.04,
+        "false_flags_per_version": 0.04,
+        "p_unchanged_test_case_flagged": 0.004,
+        "recall": 0.024,
+        "precision": 0.965,
+        "gated_recall": 0.259
+      },
+      "fdr_0.05_version": {
+        "unchanged_versions_flagged": "1/25",
+        "p_unchanged_version_ci95": [
+          0.001,
+          0.204
+        ],
+        "precision_no_inertia": 0.869,
+        "oracle_share": 0.691,
+        "oracle_share_no_inertia": 0.591,
+        "any_correct_flag_no_inertia": 0.413,
+        "reduction_no_inertia": 0.936,
+        "gated_precision": 0.658,
+        "share_flags_on_oracle_below_gate": 0.222,
+        "share_off_oracle_flags_moved": 0.366,
+        "any_correct_flag": 0.361,
+        "reduction": 0.947,
+        "p_unchanged_version_flagged": 0.04,
+        "false_flags_per_version": 0.04,
+        "p_unchanged_test_case_flagged": 0.004,
+        "recall": 0.068,
+        "precision": 0.88,
+        "gated_recall": 0.683
+      },
+      "fdr_0.10_version": {
+        "unchanged_versions_flagged": "1/25",
+        "p_unchanged_version_ci95": [
+          0.001,
+          0.204
+        ],
+        "precision_no_inertia": 0.848,
+        "oracle_share": 0.691,
+        "oracle_share_no_inertia": 0.591,
+        "any_correct_flag_no_inertia": 0.45,
+        "reduction_no_inertia": 0.927,
+        "gated_precision": 0.6,
+        "share_flags_on_oracle_below_gate": 0.261,
+        "share_off_oracle_flags_moved": 0.307,
+        "any_correct_flag": 0.397,
+        "reduction": 0.939,
+        "p_unchanged_version_flagged": 0.04,
+        "false_flags_per_version": 0.04,
+        "p_unchanged_test_case_flagged": 0.004,
+        "recall": 0.075,
+        "precision": 0.861,
+        "gated_recall": 0.71
+      },
+      "by_0.05_version": {
+        "unchanged_versions_flagged": "0/25",
+        "p_unchanged_version_ci95": [
+          0.0,
+          0.137
+        ],
+        "precision_no_inertia": 0.9,
+        "oracle_share": 0.691,
+        "oracle_share_no_inertia": 0.591,
+        "any_correct_flag_no_inertia": 0.324,
+        "reduction_no_inertia": 0.953,
+        "gated_precision": 0.781,
+        "share_flags_on_oracle_below_gate": 0.124,
+        "share_off_oracle_flags_moved": 0.42,
+        "any_correct_flag": 0.27,
+        "reduction": 0.962,
+        "p_unchanged_version_flagged": 0.0,
+        "false_flags_per_version": 0.0,
+        "p_unchanged_test_case_flagged": 0.0,
+        "recall": 0.049,
+        "precision": 0.905,
+        "gated_recall": 0.574
+      }
+    },
+    "sig_dynamic": {
+      "per_output_0.05": {
+        "unchanged_versions_flagged": "25/25",
+        "p_unchanged_version_ci95": [
+          0.863,
+          1.0
+        ],
+        "precision_no_inertia": 0.654,
+        "oracle_share": 0.691,
+        "oracle_share_no_inertia": 0.591,
+        "any_correct_flag_no_inertia": 0.674,
+        "reduction_no_inertia": 0.854,
+        "gated_precision": 0.129,
+        "share_flags_on_oracle_below_gate": 0.572,
+        "share_off_oracle_flags_moved": 0.098,
+        "any_correct_flag": 0.68,
+        "reduction": 0.872,
+        "p_unchanged_version_flagged": 1.0,
+        "false_flags_per_version": 12.64,
+        "p_unchanged_test_case_flagged": 0.652,
+        "recall": 0.13,
+        "precision": 0.701,
+        "gated_recall": 0.323
+      },
+      "bonferroni_version": {
+        "unchanged_versions_flagged": "1/25",
+        "p_unchanged_version_ci95": [
+          0.001,
+          0.204
+        ],
+        "precision_no_inertia": 0.831,
+        "oracle_share": 0.691,
+        "oracle_share_no_inertia": 0.591,
+        "any_correct_flag_no_inertia": 0.098,
+        "reduction_no_inertia": 0.99,
+        "gated_precision": 0.438,
+        "share_flags_on_oracle_below_gate": 0.405,
+        "share_off_oracle_flags_moved": 0.345,
+        "any_correct_flag": 0.083,
+        "reduction": 0.992,
+        "p_unchanged_version_flagged": 0.04,
+        "false_flags_per_version": 0.04,
+        "p_unchanged_test_case_flagged": 0.004,
+        "recall": 0.01,
+        "precision": 0.843,
+        "gated_recall": 0.07
+      },
+      "fdr_0.05_version": {
+        "unchanged_versions_flagged": "1/25",
+        "p_unchanged_version_ci95": [
+          0.001,
+          0.204
+        ],
+        "precision_no_inertia": 0.685,
+        "oracle_share": 0.691,
+        "oracle_share_no_inertia": 0.591,
+        "any_correct_flag_no_inertia": 0.307,
+        "reduction_no_inertia": 0.944,
+        "gated_precision": 0.258,
+        "share_flags_on_oracle_below_gate": 0.437,
+        "share_off_oracle_flags_moved": 0.151,
+        "any_correct_flag": 0.244,
+        "reduction": 0.956,
+        "p_unchanged_version_flagged": 0.04,
+        "false_flags_per_version": 0.04,
+        "p_unchanged_test_case_flagged": 0.004,
+        "recall": 0.044,
+        "precision": 0.696,
+        "gated_recall": 0.222
+      },
+      "fdr_0.10_version": {
+        "unchanged_versions_flagged": "1/25",
+        "p_unchanged_version_ci95": [
+          0.001,
+          0.204
+        ],
+        "precision_no_inertia": 0.677,
+        "oracle_share": 0.691,
+        "oracle_share_no_inertia": 0.591,
+        "any_correct_flag_no_inertia": 0.375,
+        "reduction_no_inertia": 0.926,
+        "gated_precision": 0.222,
+        "share_flags_on_oracle_below_gate": 0.467,
+        "share_off_oracle_flags_moved": 0.12,
+        "any_correct_flag": 0.301,
+        "reduction": 0.942,
+        "p_unchanged_version_flagged": 0.04,
+        "false_flags_per_version": 0.04,
+        "p_unchanged_test_case_flagged": 0.004,
+        "recall": 0.058,
+        "precision": 0.689,
+        "gated_recall": 0.251
+      },
+      "by_0.05_version": {
+        "unchanged_versions_flagged": "0/25",
+        "p_unchanged_version_ci95": [
+          0.0,
+          0.137
+        ],
+        "precision_no_inertia": 0.654,
+        "oracle_share": 0.691,
+        "oracle_share_no_inertia": 0.591,
+        "any_correct_flag_no_inertia": 0.169,
+        "reduction_no_inertia": 0.971,
+        "gated_precision": 0.33,
+        "share_flags_on_oracle_below_gate": 0.332,
+        "share_off_oracle_flags_moved": 0.2,
+        "any_correct_flag": 0.135,
+        "reduction": 0.977,
+        "p_unchanged_version_flagged": 0.0,
+        "false_flags_per_version": 0.0,
+        "p_unchanged_test_case_flagged": 0.0,
+        "recall": 0.022,
+        "precision": 0.662,
+        "gated_recall": 0.147
+      }
+    },
+    "sig_static": {
+      "per_output_0.05": {
+        "unchanged_versions_flagged": "25/25",
+        "p_unchanged_version_ci95": [
+          0.863,
+          1.0
+        ],
+        "precision_no_inertia": 0.674,
+        "oracle_share": 0.691,
+        "oracle_share_no_inertia": 0.591,
+        "any_correct_flag_no_inertia": 0.686,
+        "reduction_no_inertia": 0.859,
+        "gated_precision": 0.112,
+        "share_flags_on_oracle_below_gate": 0.603,
+        "share_off_oracle_flags_moved": 0.096,
+        "any_correct_flag": 0.679,
+        "reduction": 0.878,
+        "p_unchanged_version_flagged": 1.0,
+        "false_flags_per_version": 11.72,
+        "p_unchanged_test_case_flagged": 0.546,
+        "recall": 0.127,
+        "precision": 0.715,
+        "gated_recall": 0.267
+      },
+      "bonferroni_version": {
+        "unchanged_versions_flagged": "0/25",
+        "p_unchanged_version_ci95": [
+          0.0,
+          0.137
+        ],
+        "precision_no_inertia": 0.833,
+        "oracle_share": 0.691,
+        "oracle_share_no_inertia": 0.591,
+        "any_correct_flag_no_inertia": 0.11,
+        "reduction_no_inertia": 0.987,
+        "gated_precision": 0.35,
+        "share_flags_on_oracle_below_gate": 0.487,
+        "share_off_oracle_flags_moved": 0.105,
+        "any_correct_flag": 0.09,
+        "reduction": 0.99,
+        "p_unchanged_version_flagged": 0.0,
+        "false_flags_per_version": 0.0,
+        "p_unchanged_test_case_flagged": 0.0,
+        "recall": 0.012,
+        "precision": 0.838,
+        "gated_recall": 0.07
+      },
+      "fdr_0.05_version": {
+        "unchanged_versions_flagged": "0/25",
+        "p_unchanged_version_ci95": [
+          0.0,
+          0.137
+        ],
+        "precision_no_inertia": 0.71,
+        "oracle_share": 0.691,
+        "oracle_share_no_inertia": 0.591,
+        "any_correct_flag_no_inertia": 0.309,
+        "reduction_no_inertia": 0.94,
+        "gated_precision": 0.188,
+        "share_flags_on_oracle_below_gate": 0.524,
+        "share_off_oracle_flags_moved": 0.121,
+        "any_correct_flag": 0.241,
+        "reduction": 0.955,
+        "p_unchanged_version_flagged": 0.0,
+        "false_flags_per_version": 0.0,
+        "p_unchanged_test_case_flagged": 0.0,
+        "recall": 0.047,
+        "precision": 0.712,
+        "gated_recall": 0.168
+      },
+      "fdr_0.10_version": {
+        "unchanged_versions_flagged": "3/25",
+        "p_unchanged_version_ci95": [
+          0.025,
+          0.312
+        ],
+        "precision_no_inertia": 0.705,
+        "oracle_share": 0.691,
+        "oracle_share_no_inertia": 0.591,
+        "any_correct_flag_no_inertia": 0.375,
+        "reduction_no_inertia": 0.923,
+        "gated_precision": 0.174,
+        "share_flags_on_oracle_below_gate": 0.54,
+        "share_off_oracle_flags_moved": 0.11,
+        "any_correct_flag": 0.311,
+        "reduction": 0.94,
+        "p_unchanged_version_flagged": 0.12,
+        "false_flags_per_version": 0.16,
+        "p_unchanged_test_case_flagged": 0.011,
+        "recall": 0.062,
+        "precision": 0.714,
+        "gated_recall": 0.204
+      },
+      "by_0.05_version": {
+        "unchanged_versions_flagged": "0/25",
+        "p_unchanged_version_ci95": [
+          0.0,
+          0.137
+        ],
+        "precision_no_inertia": 0.697,
+        "oracle_share": 0.691,
+        "oracle_share_no_inertia": 0.591,
+        "any_correct_flag_no_inertia": 0.16,
+        "reduction_no_inertia": 0.972,
+        "gated_precision": 0.271,
+        "share_flags_on_oracle_below_gate": 0.429,
+        "share_off_oracle_flags_moved": 0.166,
+        "any_correct_flag": 0.126,
+        "reduction": 0.979,
+        "p_unchanged_version_flagged": 0.0,
+        "false_flags_per_version": 0.0,
+        "p_unchanged_test_case_flagged": 0.0,
+        "recall": 0.021,
+        "precision": 0.7,
+        "gated_recall": 0.113
+      }
+    },
+    "ks": {
+      "per_output_0.05": {
+        "unchanged_versions_flagged": "25/25",
+        "p_unchanged_version_ci95": [
+          0.863,
+          1.0
+        ],
+        "precision_no_inertia": 0.83,
+        "oracle_share": 0.691,
+        "oracle_share_no_inertia": 0.591,
+        "any_correct_flag_no_inertia": 0.765,
+        "reduction_no_inertia": 0.866,
+        "gated_precision": 0.271,
+        "share_flags_on_oracle_below_gate": 0.598,
+        "share_off_oracle_flags_moved": 0.191,
+        "any_correct_flag": 0.795,
+        "reduction": 0.869,
+        "p_unchanged_version_flagged": 1.0,
+        "false_flags_per_version": 11.12,
+        "p_unchanged_test_case_flagged": 0.498,
+        "recall": 0.165,
+        "precision": 0.869,
+        "gated_recall": 0.697
+      },
+      "bonferroni_version": {
+        "unchanged_versions_flagged": "0/25",
+        "p_unchanged_version_ci95": [
+          0.0,
+          0.137
+        ],
+        "precision_no_inertia": 0.963,
+        "oracle_share": 0.691,
+        "oracle_share_no_inertia": 0.591,
+        "any_correct_flag_no_inertia": 0.252,
+        "reduction_no_inertia": 0.978,
+        "gated_precision": 0.601,
+        "share_flags_on_oracle_below_gate": 0.37,
+        "share_off_oracle_flags_moved": 0.643,
+        "any_correct_flag": 0.257,
+        "reduction": 0.979,
+        "p_unchanged_version_flagged": 0.0,
+        "false_flags_per_version": 0.0,
+        "p_unchanged_test_case_flagged": 0.0,
+        "recall": 0.029,
+        "precision": 0.971,
+        "gated_recall": 0.246
+      },
+      "fdr_0.05_version": {
+        "unchanged_versions_flagged": "0/25",
+        "p_unchanged_version_ci95": [
+          0.0,
+          0.137
+        ],
+        "precision_no_inertia": 0.914,
+        "oracle_share": 0.691,
+        "oracle_share_no_inertia": 0.591,
+        "any_correct_flag_no_inertia": 0.535,
+        "reduction_no_inertia": 0.931,
+        "gated_precision": 0.483,
+        "share_flags_on_oracle_below_gate": 0.447,
+        "share_off_oracle_flags_moved": 0.456,
+        "any_correct_flag": 0.557,
+        "reduction": 0.935,
+        "p_unchanged_version_flagged": 0.0,
+        "false_flags_per_version": 0.0,
+        "p_unchanged_test_case_flagged": 0.0,
+        "recall": 0.088,
+        "precision": 0.931,
+        "gated_recall": 0.616
+      },
+      "fdr_0.10_version": {
+        "unchanged_versions_flagged": "0/25",
+        "p_unchanged_version_ci95": [
+          0.0,
+          0.137
+        ],
+        "precision_no_inertia": 0.901,
+        "oracle_share": 0.691,
+        "oracle_share_no_inertia": 0.591,
+        "any_correct_flag_no_inertia": 0.571,
+        "reduction_no_inertia": 0.92,
+        "gated_precision": 0.423,
+        "share_flags_on_oracle_below_gate": 0.499,
+        "share_off_oracle_flags_moved": 0.394,
+        "any_correct_flag": 0.605,
+        "reduction": 0.922,
+        "p_unchanged_version_flagged": 0.0,
+        "false_flags_per_version": 0.0,
+        "p_unchanged_test_case_flagged": 0.0,
+        "recall": 0.104,
+        "precision": 0.922,
+        "gated_recall": 0.642
+      },
+      "by_0.05_version": {
+        "unchanged_versions_flagged": "0/25",
+        "p_unchanged_version_ci95": [
+          0.0,
+          0.137
+        ],
+        "precision_no_inertia": 0.925,
+        "oracle_share": 0.691,
+        "oracle_share_no_inertia": 0.591,
+        "any_correct_flag_no_inertia": 0.432,
+        "reduction_no_inertia": 0.949,
+        "gated_precision": 0.623,
+        "share_flags_on_oracle_below_gate": 0.313,
+        "share_off_oracle_flags_moved": 0.515,
+        "any_correct_flag": 0.417,
+        "reduction": 0.955,
+        "p_unchanged_version_flagged": 0.0,
+        "false_flags_per_version": 0.0,
+        "p_unchanged_test_case_flagged": 0.0,
+        "recall": 0.061,
+        "precision": 0.936,
+        "gated_recall": 0.549
+      }
+    },
+    "iforest": {
+      "per_output_0.05": {
+        "unchanged_versions_flagged": "14/25",
+        "p_unchanged_version_ci95": [
+          0.349,
+          0.756
+        ],
+        "precision_no_inertia": 0.59,
+        "oracle_share": 0.691,
+        "oracle_share_no_inertia": 0.591,
+        "any_correct_flag_no_inertia": 0.548,
+        "reduction_no_inertia": 0.511,
+        "gated_precision": 0.1,
+        "share_flags_on_oracle_below_gate": 0.503,
+        "share_off_oracle_flags_moved": 0.063,
+        "any_correct_flag": 0.441,
+        "reduction": 0.618,
+        "p_unchanged_version_flagged": 0.56,
+        "false_flags_per_version": 12.28,
+        "p_unchanged_test_case_flagged": 0.099,
+        "recall": 0.334,
+        "precision": 0.603,
+        "gated_recall": 0.749
+      },
+      "bonferroni_version": {
+        "unchanged_versions_flagged": "0/25",
+        "p_unchanged_version_ci95": [
+          0.0,
+          0.137
+        ],
+        "precision_no_inertia": 0.597,
+        "oracle_share": 0.691,
+        "oracle_share_no_inertia": 0.591,
+        "any_correct_flag_no_inertia": 0.209,
+        "reduction_no_inertia": 0.836,
+        "gated_precision": 0.111,
+        "share_flags_on_oracle_below_gate": 0.485,
+        "share_off_oracle_flags_moved": 0.063,
+        "any_correct_flag": 0.158,
+        "reduction": 0.876,
+        "p_unchanged_version_flagged": 0.0,
+        "false_flags_per_version": 0.0,
+        "p_unchanged_test_case_flagged": 0.0,
+        "recall": 0.107,
+        "precision": 0.597,
+        "gated_recall": 0.271
+      },
+      "fdr_0.05_version": {
+        "unchanged_versions_flagged": "0/25",
+        "p_unchanged_version_ci95": [
+          0.0,
+          0.137
+        ],
+        "precision_no_inertia": 0.591,
+        "oracle_share": 0.691,
+        "oracle_share_no_inertia": 0.591,
+        "any_correct_flag_no_inertia": 0.47,
+        "reduction_no_inertia": 0.555,
+        "gated_precision": 0.109,
+        "share_flags_on_oracle_below_gate": 0.482,
+        "share_off_oracle_flags_moved": 0.062,
+        "any_correct_flag": 0.356,
+        "reduction": 0.663,
+        "p_unchanged_version_flagged": 0.0,
+        "false_flags_per_version": 0.0,
+        "p_unchanged_test_case_flagged": 0.0,
+        "recall": 0.288,
+        "precision": 0.591,
+        "gated_recall": 0.716
+      },
+      "fdr_0.10_version": {
+        "unchanged_versions_flagged": "0/25",
+        "p_unchanged_version_ci95": [
+          0.0,
+          0.137
+        ],
+        "precision_no_inertia": 0.591,
+        "oracle_share": 0.691,
+        "oracle_share_no_inertia": 0.591,
+        "any_correct_flag_no_inertia": 0.48,
+        "reduction_no_inertia": 0.54,
+        "gated_precision": 0.106,
+        "share_flags_on_oracle_below_gate": 0.485,
+        "share_off_oracle_flags_moved": 0.06,
+        "any_correct_flag": 0.363,
+        "reduction": 0.652,
+        "p_unchanged_version_flagged": 0.0,
+        "false_flags_per_version": 0.0,
+        "p_unchanged_test_case_flagged": 0.0,
+        "recall": 0.298,
+        "precision": 0.591,
+        "gated_recall": 0.722
+      },
+      "by_0.05_version": {
+        "unchanged_versions_flagged": "0/25",
+        "p_unchanged_version_ci95": [
+          0.0,
+          0.137
+        ],
+        "precision_no_inertia": 0.592,
+        "oracle_share": 0.691,
+        "oracle_share_no_inertia": 0.591,
+        "any_correct_flag_no_inertia": 0.432,
+        "reduction_no_inertia": 0.607,
+        "gated_precision": 0.116,
+        "share_flags_on_oracle_below_gate": 0.476,
+        "share_off_oracle_flags_moved": 0.062,
+        "any_correct_flag": 0.327,
+        "reduction": 0.703,
+        "p_unchanged_version_flagged": 0.0,
+        "false_flags_per_version": 0.0,
+        "p_unchanged_test_case_flagged": 0.0,
+        "recall": 0.255,
+        "precision": 0.592,
+        "gated_recall": 0.678
+      }
+    }
+  },
+  "ranking": {
+    "regression": {
+      "recall_at3": 0.162,
+      "recall_at5": 0.261,
+      "ap": 0.769,
+      "inspect_before_first": 1.445,
+      "any_correct_flag": 0.671,
+      "reduction": 0.847
+    },
+    "envelope": {
+      "recall_at3": 0.143,
+      "recall_at5": 0.214,
+      "ap": 0.704,
+      "inspect_before_first": 1.78,
+      "any_correct_flag": 0.594,
+      "reduction": 0.895
+    },
+    "sig_dynamic": {
+      "recall_at3": 0.163,
+      "recall_at5": 0.264,
+      "ap": 0.769,
+      "inspect_before_first": 1.348,
+      "any_correct_flag": 0.68,
+      "reduction": 0.872
+    },
+    "sig_static": {
+      "recall_at3": 0.165,
+      "recall_at5": 0.266,
+      "ap": 0.774,
+      "inspect_before_first": 1.357,
+      "any_correct_flag": 0.679,
+      "reduction": 0.878
+    },
+    "ks": {
+      "recall_at3": 0.182,
+      "recall_at5": 0.287,
+      "ap": 0.804,
+      "inspect_before_first": 1.157,
+      "any_correct_flag": 0.795,
+      "reduction": 0.869
+    },
+    "iforest": {
+      "recall_at3": 0.154,
+      "recall_at5": 0.247,
+      "ap": 0.76,
+      "inspect_before_first": 1.356,
+      "any_correct_flag": 0.441,
+      "reduction": 0.618
+    }
+  },
+  "ranking_no_inertia": {
+    "regression": {
+      "ap": 0.694,
+      "inspect_before_first": 1.589,
+      "any_correct_flag": 0.715,
+      "top_is_affected": 0.739
+    },
+    "envelope": {
+      "ap": 0.609,
+      "inspect_before_first": 2.031,
+      "any_correct_flag": 0.618,
+      "top_is_affected": 0.713
+    },
+    "sig_dynamic": {
+      "ap": 0.694,
+      "inspect_before_first": 1.46,
+      "any_correct_flag": 0.674,
+      "top_is_affected": 0.724
+    },
+    "sig_static": {
+      "ap": 0.701,
+      "inspect_before_first": 1.471,
+      "any_correct_flag": 0.686,
+      "top_is_affected": 0.716
+    },
+    "ks": {
+      "ap": 0.741,
+      "inspect_before_first": 1.207,
+      "any_correct_flag": 0.765,
+      "top_is_affected": 0.872
+    },
+    "iforest": {
+      "ap": 0.683,
+      "inspect_before_first": 1.47,
+      "any_correct_flag": 0.548,
+      "top_is_affected": 0.739
+    }
+  },
+  "ranking_chance": {
+    "all": {
+      "first_affected_rank": 1.486,
+      "top_is_affected": 0.691,
+      "ap": 0.73
+    },
+    "no_inertia": {
+      "first_affected_rank": 1.643,
+      "top_is_affected": 0.591,
+      "ap": 0.643
+    }
+  },
+  "flag_rate_by_effect_size": {
+    "regression": {
+      "<1": 0.115,
+      "1-2": 0.559,
+      "2-4": 0.934,
+      "4-8": 1.0,
+      ">8": 1.0
+    },
+    "envelope": {
+      "<1": 0.065,
+      "1-2": 0.532,
+      "2-4": 0.969,
+      "4-8": 1.0,
+      ">8": 1.0
+    },
+    "sig_dynamic": {
+      "<1": 0.115,
+      "1-2": 0.296,
+      "2-4": 0.386,
+      "4-8": 0.312,
+      ">8": 0.318
+    },
+    "sig_static": {
+      "<1": 0.112,
+      "1-2": 0.255,
+      "2-4": 0.297,
+      "4-8": 0.281,
+      ">8": 0.205
+    },
+    "ks": {
+      "<1": 0.099,
+      "1-2": 0.431,
+      "2-4": 0.931,
+      "4-8": 0.958,
+      ">8": 1.0
+    },
+    "iforest": {
+      "<1": 0.357,
+      "1-2": 0.66,
+      "2-4": 0.853,
+      "4-8": 0.979,
+      ">8": 0.909
+    }
+  },
+  "oracle_share_by_effect_size": {
+    "<1": 0.683,
+    "1-2": 0.711,
+    "2-4": 0.946,
+    "4-8": 0.99,
+    ">8": 0.932
+  },
+  "ci": {
+    "regression:recall": [
+      0.184,
+      0.145,
+      0.225
+    ],
+    "regression:precision": [
+      0.818,
+      0.757,
+      0.871
+    ],
+    "regression:auc": [
+      0.5,
+      0.454,
+      0.546
+    ],
+    "regression:gated_recall": [
+      0.82,
+      0.726,
+      0.896
+    ],
+    "regression:gated_auc": [
+      0.827,
+      0.772,
+      0.871
+    ],
+    "envelope:recall": [
+      0.121,
+      0.097,
+      0.148
+    ],
+    "envelope:precision": [
+      0.801,
+      0.744,
+      0.857
+    ],
+    "envelope:auc": [
+      0.35,
+      0.308,
+      0.397
+    ],
+    "envelope:gated_recall": [
+      0.841,
+      0.749,
+      0.914
+    ],
+    "envelope:gated_auc": [
+      0.902,
+      0.849,
+      0.944
+    ],
+    "sig_dynamic:recall": [
+      0.131,
+      0.111,
+      0.156
+    ],
+    "sig_dynamic:precision": [
+      0.738,
+      0.68,
+      0.793
+    ],
+    "sig_dynamic:auc": [
+      0.525,
+      0.493,
+      0.556
+    ],
+    "sig_dynamic:gated_recall": [
+      0.252,
+      0.176,
+      0.34
+    ],
+    "sig_dynamic:gated_auc": [
+      0.402,
+      0.323,
+      0.482
+    ],
+    "sig_static:recall": [
+      0.129,
+      0.107,
+      0.156
+    ],
+    "sig_static:precision": [
+      0.755,
+      0.697,
+      0.809
+    ],
+    "sig_static:auc": [
+      0.536,
+      0.507,
+      0.565
+    ],
+    "sig_static:gated_recall": [
+      0.249,
+      0.169,
+      0.342
+    ],
+    "sig_static:gated_auc": [
+      0.373,
+      0.295,
+      0.46
+    ],
+    "ks:recall": [
+      0.165,
+      0.137,
+      0.193
+    ],
+    "ks:precision": [
+      0.892,
+      0.856,
+      0.926
+    ],
+    "ks:auc": [
+      0.569,
+      0.534,
+      0.604
+    ],
+    "ks:gated_recall": [
+      0.795,
+      0.701,
+      0.872
+    ],
+    "ks:gated_auc": [
+      0.889,
+      0.844,
+      0.928
+    ],
+    "iforest:recall": [
+      0.361,
+      0.309,
+      0.42
+    ],
+    "iforest:precision": [
+      0.608,
+      0.582,
+      0.634
+    ],
+    "iforest:auc": [
+      0.535,
+      0.506,
+      0.563
+    ],
+    "iforest:gated_recall": [
+      0.809,
+      0.712,
+      0.888
+    ],
+    "iforest:gated_auc": [
+      0.828,
+      0.77,
+      0.877
+    ],
+    "residual_minus_envelope:recall": [
+      0.062,
+      0.036,
+      0.09
+    ],
+    "residual_minus_envelope:precision": [
+      -0.01,
+      -0.073,
+      0.047
+    ],
+    "residual_minus_envelope:auc": [
+      0.15,
+      0.109,
+      0.19
+    ],
+    "residual_minus_envelope:gated_recall": [
+      -0.021,
+      -0.076,
+      0.031
+    ],
+    "residual_minus_envelope:gated_auc": [
+      -0.076,
+      -0.119,
+      -0.032
+    ],
+    "residual_minus_sig_dynamic:recall": [
+      0.053,
+      0.021,
+      0.085
+    ],
+    "residual_minus_sig_dynamic:precision": [
+      0.074,
+      -0.001,
+      0.14
+    ],
+    "residual_minus_sig_dynamic:auc": [
+      -0.025,
+      -0.077,
+      0.029
+    ],
+    "residual_minus_sig_dynamic:gated_recall": [
+      0.568,
+      0.463,
+      0.664
+    ],
+    "residual_minus_sig_dynamic:gated_auc": [
+      0.425,
+      0.326,
+      0.522
+    ],
+    "residual_minus_sig_static:recall": [
+      0.054,
+      0.022,
+      0.089
+    ],
+    "residual_minus_sig_static:precision": [
+      0.072,
+      -0.004,
+      0.142
+    ],
+    "residual_minus_sig_static:auc": [
+      -0.036,
+      -0.09,
+      0.017
+    ],
+    "residual_minus_sig_static:gated_recall": [
+      0.571,
+      0.457,
+      0.672
+    ],
+    "residual_minus_sig_static:gated_auc": [
+      0.454,
+      0.346,
+      0.553
+    ],
+    "residual_minus_ks:recall": [
+      0.019,
+      -0.01,
+      0.049
+    ],
+    "residual_minus_ks:precision": [
+      -0.068,
+      -0.133,
+      -0.011
+    ],
+    "residual_minus_ks:auc": [
+      -0.069,
+      -0.118,
+      -0.022
+    ],
+    "residual_minus_ks:gated_recall": [
+      0.026,
+      -0.04,
+      0.091
+    ],
+    "residual_minus_ks:gated_auc": [
+      -0.062,
+      -0.109,
+      -0.021
+    ],
+    "residual_minus_iforest:recall": [
+      -0.178,
+      -0.226,
+      -0.132
+    ],
+    "residual_minus_iforest:precision": [
+      0.186,
+      0.121,
+      0.25
+    ],
+    "residual_minus_iforest:auc": [
+      -0.035,
+      -0.072,
+      0.005
+    ],
+    "residual_minus_iforest:gated_recall": [
+      0.011,
+      -0.074,
+      0.099
+    ],
+    "residual_minus_iforest:gated_auc": [
+      -0.001,
+      -0.045,
+      0.04
+    ],
+    "dynamic_minus_static:agreement": [
+      0.022,
+      -0.022,
+      0.067
+    ],
+    "dynamic:agreement": [
+      0.279,
+      0.224,
+      0.341
+    ],
+    "dynamic_minus_static:correctness": [
+      0.029,
+      -0.002,
+      0.065
+    ],
+    "dynamic:correctness": [
+      0.843,
+      0.773,
+      0.902
+    ],
+    "det_phase_any_minus_det_whole:recall": [
+      0.263,
+      0.135,
+      0.399
+    ],
+    "det_phase_max_minus_det_whole:recall": [
+      0.084,
+      -0.057,
+      0.274
+    ]
+  },
+  "matched_replay": {
+    "any_difference": {
+      "recall": 1.0,
+      "precision": 0.591,
+      "noop_false_alarm": 0.0
+    },
+    "beyond_benign_spread": {
+      "recall": 0.081,
+      "precision": 0.822,
+      "noop_false_alarm": 0.0
+    },
+    "outside_oracle_share_of_changed": 0.409,
+    "ranking_residual": {
+      "auc": 0.503,
+      "first_affected_rank": 1.59,
+      "top_is_affected": 0.75,
+      "n": 601
+    },
+    "ranking_matched": {
+      "auc": 0.571,
+      "first_affected_rank": 1.56,
+      "top_is_affected": 0.814,
+      "n": 601
+    }
+  },
+  "structural_failures": {
+    "noop": {
+      "matched_baseline_runs": 2757,
+      "candidate_runs_missing": 0,
+      "test_cases": 279,
+      "test_cases_with_missing": 0
+    },
+    "clo_+0.1": {
+      "matched_baseline_runs": 2637,
+      "candidate_runs_missing": 8,
+      "test_cases": 267,
+      "test_cases_with_missing": 5
+    },
+    "cmalpha_x0.7": {
+      "matched_baseline_runs": 2617,
+      "candidate_runs_missing": 10,
+      "test_cases": 265,
+      "test_cases_with_missing": 6
+    },
+    "cmq_x0.5": {
+      "matched_baseline_runs": 2637,
+      "candidate_runs_missing": 4,
+      "test_cases": 267,
+      "test_cases_with_missing": 2
+    },
+    "inertia_x1.6": {
+      "matched_baseline_runs": 2534,
+      "candidate_runs_missing": 3,
+      "test_cases": 256,
+      "test_cases_with_missing": 3
+    },
+    "B_elevator_drag_8819410c": {
+      "matched_baseline_runs": 1837,
+      "candidate_runs_missing": 4,
+      "test_cases": 185,
+      "test_cases_with_missing": 3
+    },
+    "B_pqrdot_5ad2694c": {
+      "matched_baseline_runs": 2668,
+      "candidate_runs_missing": 0,
+      "test_cases": 270,
+      "test_cases_with_missing": 0
+    },
+    "B_piston_power_bcd3f980": {
+      "matched_baseline_runs": 1007,
+      "candidate_runs_missing": 20,
+      "test_cases": 102,
+      "test_cases_with_missing": 4
+    },
+    "B_turbine_windmill_2db8e408": {
+      "matched_baseline_runs": 1444,
+      "candidate_runs_missing": 0,
+      "test_cases": 146,
+      "test_cases_with_missing": 0
+    },
+    "B_ground_effect_9c058118": {
+      "matched_baseline_runs": 240,
+      "candidate_runs_missing": 0,
+      "test_cases": 24,
+      "test_cases_with_missing": 0
+    }
+  }
+}

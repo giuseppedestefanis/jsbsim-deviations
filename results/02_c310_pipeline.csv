@@ -1,0 +1,15 @@
+fault,threshold,level,tp,fp,fn,precision,recall,f1,auc,flagged,false_alarm_rate,n_flagged
+inertia,p95,metric,1.0,1.0,6.0,0.5,0.14,0.22,0.51,"qdot-rad_sec2,vdot-ft_sec2",,
+inertia,p95,category,1.0,0.0,2.0,1.0,0.33,0.5,,,,
+inertia,max,metric,0.0,0.0,7.0,,0.0,,0.51,,,
+inertia,max,category,0.0,0.0,3.0,,0.0,,,,,
+lift,p95,metric,5.0,4.0,0.0,0.56,1.0,0.71,0.49,"h-sl-ft,u-fps,v-fps,p-rad_sec,r-rad_sec,pdot-rad_sec2,qdot-rad_sec2,rdot-rad_sec2,vdot-ft_sec2",,
+lift,p95,category,2.0,1.0,0.0,0.67,1.0,0.8,,,,
+lift,max,metric,0.0,3.0,5.0,0.0,0.0,,0.49,"h-sl-ft,r-rad_sec,qdot-rad_sec2",,
+lift,max,category,2.0,1.0,0.0,0.67,1.0,0.8,,,,
+pitch,p95,metric,2.0,0.0,5.0,1.0,0.29,0.44,0.63,"qdot-rad_sec2,vdot-ft_sec2",,
+pitch,p95,category,1.0,0.0,3.0,1.0,0.25,0.4,,,,
+pitch,max,metric,0.0,0.0,7.0,,0.0,,0.63,,,
+pitch,max,category,0.0,0.0,4.0,,0.0,,,,,
+noop,p95,metric,,,,,,,,,0.273,6.0
+noop,max,metric,,,,,,,,,0.0,0.0

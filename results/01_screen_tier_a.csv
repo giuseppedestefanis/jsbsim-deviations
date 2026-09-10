@@ -1,0 +1,46 @@
+aircraft,cls,trim_ok,trim_method,trim_msg,h_ft,vc_kts,handsoff_ok,handsoff_msg,doublet_ok,doublet_msg,n_engines,doublet_q_max
+737,airliner,True,analytic,analytic: ok,20000.0,280.0,True,dh=66 dv=-1.3 phi=0.1,True,dh=15 dv=-0.4 phi=0.1,2,0.056333214140637224
+787-8,airliner,True,analytic,analytic: ok,20000.0,280.0,True,dh=26 dv=-0.4 phi=0.1,True,dh=-7 dv=0.1 phi=0.1,2,0.06947230510697937
+A320,airliner,True,analytic,analytic: ok,20000.0,280.0,True,dh=30 dv=-0.7 phi=0.1,True,dh=-45 dv=0.6 phi=0.1,2,0.1437810167220428
+A4,fighter,True,analytic,analytic: ok,20000.0,350.0,True,dh=91 dv=-1.2 phi=0.1,True,dh=76 dv=-1.6 phi=0.1,1,0.2256798329290883
+B17,bomber,False,,settle: not settled dh=740 dv=47.6 phi=1.2 off_h=3997 off_v=77.0 thr=1.00 ele=-0.600,,,False,,False,,4,
+B747,airliner,True,analytic,analytic: ok,20000.0,280.0,True,dh=36 dv=-0.6 phi=0.1,True,dh=-3 dv=0.1 phi=0.1,4,0.04400455947350052
+Boeing314,vintage,True,settle,settle: settled dh=0 dv=0.2 phi=0.4 off_h=67 off_v=0.0 thr=0.71 ele=-0.101,5000.0,120.0,True,dh=21 dv=-4.2 phi=0.8,True,dh=73 dv=-7.2 phi=1.3,4,0.02968000359193605
+C130,transport,False,,settle: not settled dh=1579 dv=42.0 phi=0.0 off_h=1843 off_v=91.7 thr=1.00 ele=-0.600,,,False,,False,,4,
+Camel,vintage,True,analytic,analytic: ok,3000.0,80.0,True,dh=-7 dv=0.3 phi=0.0,True,dh=-18 dv=-0.2 phi=2.7,1,0.15478994965534548
+Concorde,airliner,False,,settle: not settled dh=25 dv=20.0 phi=0.3 off_h=109 off_v=21.3 thr=0.85 ele=-0.192,,,False,,False,,4,
+DHC6,light,False,,settle: trimmed at 8000/110 but altitude drift -520 ft,,,False,,False,,2,
+F4N,fighter,True,analytic,analytic: ok,20000.0,350.0,True,dh=99 dv=-1.6 phi=0.1,True,dh=95 dv=-2.0 phi=0.1,2,0.09103386341222007
+F80C,fighter,True,analytic,analytic: ok,10000.0,300.0,True,dh=54 dv=-1.2 phi=0.1,True,dh=6 dv=-0.1 phi=0.1,1,0.09667366523214933
+J3Cub,cub,True,analytic,analytic: ok,2000.0,60.0,True,dh=0 dv=-0.0 phi=0.0,True,dh=-2 dv=0.2 phi=0.1,1,0.04392921007401112
+L17,light,False,,settle: start: LogExceptionError,,,False,,False,,1,
+L410,turboprop,False,,settle: not settled dh=367 dv=1.2 phi=3.5 off_h=1722 off_v=48.2 thr=1.00 ele=-0.600,,,False,,False,,2,
+MD11,airliner,True,analytic,analytic: ok,20000.0,280.0,True,dh=28 dv=-0.5 phi=0.1,True,dh=22 dv=-0.6 phi=0.1,3,0.018581587814759395
+OV10,turboprop,True,analytic,analytic: ok,10000.0,180.0,True,dh=5 dv=-0.1 phi=0.1,True,dh=-6 dv=-0.2 phi=0.1,2,0.09399295207135284
+SGS,other,False,,analytic: no engine (glider),,,False,,False,,0,
+Short_S23,vintage,True,settle,settle: settled dh=14 dv=0.2 phi=2.9 off_h=144 off_v=0.8 thr=0.45 ele=-0.209,3000.0,80.0,True,dh=41 dv=-4.2 phi=2.1,True,dh=-11 dv=1.8 phi=2.9,4,0.03454731180428169
+T37,trainer,True,analytic,analytic: ok,10000.0,200.0,True,dh=16 dv=-0.3 phi=0.1,True,dh=24 dv=-1.0 phi=0.1,2,0.08730226649663834
+T38,fighter,True,analytic,analytic: ok,20000.0,350.0,True,dh=-7 dv=0.9 phi=0.1,True,dh=22 dv=-0.8 phi=0.1,2,0.13028339565254446
+X15,other,False,,settle: not settled dh=2476 dv=24.6 phi=0.0 off_h=3434 off_v=244.7 thr=1.00 ele=-0.600,,,False,,False,,1,
+XB-70,other,False,,settle: not settled dh=4928 dv=3.6 phi=9.7 off_h=18864 off_v=277.3 thr=1.00 ele=-0.600,,,False,,False,,6,
+c172p,light,True,analytic,analytic: ok,5000.0,100.0,True,dh=0 dv=-0.0 phi=0.0,True,dh=1 dv=-0.2 phi=0.7,1,0.17733717389708936
+c172r,light,True,analytic,analytic: ok,5000.0,100.0,True,dh=1 dv=-0.0 phi=0.0,True,dh=3 dv=-0.4 phi=0.3,1,0.17877103848533893
+c172x,light,True,analytic,analytic: ok,5000.0,100.0,True,dh=1 dv=-0.0 phi=0.2,False,bank 31 deg,1,0.06178174994634056
+c182,light,True,settle,settle: settled dh=1 dv=0.2 phi=2.9 off_h=122 off_v=0.1 thr=0.72 ele=0.184,5000.0,100.0,True,dh=80 dv=-7.9 phi=2.4,True,dh=3 dv=-0.9 phi=2.6,1,0.08786843557353086
+c310,light,True,settle,settle: settled dh=0 dv=0.0 phi=2.0 off_h=38 off_v=0.0 thr=0.71 ele=-0.057,5000.0,100.0,True,dh=74 dv=-10.2 phi=1.4,True,dh=-39 dv=3.7 phi=1.8,2,0.04400244239927516
+dr1,vintage,False,,settle: start: LogExceptionError,,,False,,False,,1,
+f104,fighter,False,,settle: start: LogExceptionError,,,False,,False,,1,
+f15,fighter,True,analytic,analytic: ok,20000.0,350.0,True,dh=96 dv=-1.9 phi=0.1,True,dh=27 dv=-2.0 phi=0.1,2,0.15629877978188347
+f16,fighter,True,analytic,analytic: ok,20000.0,350.0,True,dh=74 dv=-1.1 phi=0.3,True,dh=-39 dv=0.6 phi=3.4,1,0.08194897989856875
+f22,fighter,False,,settle: not settled dh=6660 dv=35.5 phi=42.8 off_h=2581 off_v=376.8 thr=1.00 ele=0.600,,,False,,False,,2,
+fokker100,airliner,False,,settle: start: LogExceptionError,,,False,,False,,2,
+fokker50,turboprop,False,,settle: start: LogExceptionError,,,False,,False,,2,
+global5000,bizjet,True,analytic,analytic: ok,20000.0,250.0,True,dh=26 dv=-0.5 phi=0.1,True,dh=-36 dv=0.8 phi=0.1,2,0.11938373976685804
+minisgs,other,False,,analytic: no engine (glider),,,False,,False,,0,
+p51d,vintage,False,,settle: not settled dh=0 dv=0.0 phi=11.1 off_h=1999 off_v=37.9 thr=1.00 ele=-0.600,,,False,,False,,1,
+pa28,light,True,settle,settle: settled dh=3 dv=0.7 phi=4.1 off_h=38 off_v=0.3 thr=0.92 ele=0.052,5000.0,100.0,True,dh=34 dv=-7.8 phi=4.3,True,dh=-19 dv=0.9 phi=4.3,1,0.13339668479395203
+paraglider,other,False,,settle: NaN during settle,,,False,,False,,1,
+pc7,turboprop,True,settle,settle: settled dh=0 dv=0.1 phi=0.9 off_h=32 off_v=0.1 thr=0.69 ele=-0.048,5000.0,130.0,True,dh=-186 dv=3.0 phi=5.8,True,dh=296 dv=-23.6 phi=1.7,1,0.20376439770538096
+sgs126,other,False,,analytic: no engine (glider),,,False,,False,,0,
+sgs233,other,False,,analytic: no engine (glider),,,False,,False,,0,
+t6texan2,turboprop,True,analytic,analytic: ok,10000.0,180.0,True,dh=3 dv=-0.1 phi=1.8,True,dh=-5 dv=-0.3 phi=2.7,1,0.24392867700994936

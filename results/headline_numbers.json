@@ -1,0 +1,75 @@
+{
+  "n_aircraft": 25,
+  "n_pairs": 274,
+  "detector_recall": 0.2,
+  "detector_precision": 0.83,
+  "detector_auc": 0.51,
+  "detector_recall_by_fault": {
+    "cmalpha_x0.7": 0.22,
+    "cmq_x0.5": 0.12,
+    "clo_+0.1": 0.39,
+    "inertia_x1.6": 0.06
+  },
+  "noop_false_alarm": {
+    "regression": 0.027,
+    "envelope": 0.032,
+    "sig_dynamic": 0.053,
+    "sig_static": 0.049,
+    "ks": 0.046,
+    "iforest": 0.051
+  },
+  "auc_by_method": {
+    "regression": 0.51,
+    "envelope": 0.36,
+    "sig_dynamic": 0.53,
+    "sig_static": 0.54,
+    "ks": 0.57,
+    "iforest": 0.53
+  },
+  "gated_detector_recall": 0.79,
+  "gated_detector_precision": 0.43,
+  "gated_detector_auc": 0.81,
+  "gated_recall_by_fault": {
+    "cmalpha_x0.7": 0.58,
+    "cmq_x0.5": 0.56,
+    "clo_+0.1": 0.9,
+    "inertia_x1.6": 0.59
+  },
+  "gated_auc_by_method": {
+    "regression": 0.81,
+    "envelope": 0.87,
+    "sig_dynamic": 0.41,
+    "sig_static": 0.38,
+    "ks": 0.86,
+    "iforest": 0.8
+  },
+  "gated_recall_by_method": {
+    "regression": 0.79,
+    "envelope": 0.81,
+    "sig_dynamic": 0.26,
+    "sig_static": 0.24,
+    "ks": 0.74,
+    "iforest": 0.77
+  },
+  "frac_pairs_with_gated_outputs": 0.34,
+  "detector_share_no_flag": 0.29,
+  "detector_precision_among_flagging": 0.83,
+  "share_no_flag_by_method": {
+    "regression": 0.29,
+    "envelope": 0.32,
+    "sig_dynamic": 0.22,
+    "sig_static": 0.24,
+    "ks": 0.17,
+    "iforest": 0.55
+  },
+  "agreement_dynamic": 0.26,
+  "correctness_dynamic": 0.84,
+  "agreement_pooled_dynamic": 0.36,
+  "correctness_pooled_dynamic": 0.81,
+  "trim_shift_share_dynamic": 0.66,
+  "agreement_static": 0.24,
+  "correctness_static": 0.82,
+  "agreement_pooled_static": 0.31,
+  "correctness_pooled_static": 0.78,
+  "trim_shift_share_static": 0.66
+}

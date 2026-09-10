@@ -1,0 +1,321 @@
+sha,date,kind,message,files,n_lines,reverts_cleanly,development_set
+c8af9244,2025-07-15,cpp,Fix uninitialized ThrottlePos in FGTurbine (#1297),src/models/propulsion/FGTurbine.cpp,3,True,False
+20066483,2025-04-15,cpp,Fix `FGTurbine` to update the thruster inputs before calling `FGThruster::Calculate` (#1259),src/models/propulsion/FGTurbine.cpp,3,True,False
+1dc9e111,2024-11-24,cpp,Fix bounds checks in FGFCS (#1191),src/models/FGFCS.cpp,18,False,False
+5ad2694c,2024-02-10,cpp,Fix a mistake in vPQRdot calculation (#1036),src/models/FGAccelerations.cpp,8,True,True
+44469113,2023-11-26,model,Fixed another syntax problem in systems/hydrodynamics.xml.,systems/hydrodynamics.xml,4,True,False
+2f9d7a2a,2023-11-26,model,Fixed syntax problems in systems/hydrodynamics.xml.,systems/hydrodynamics.xml,10,True,False
+ece80216,2023-11-26,model,Fixed syntax problems in systems/hydrodynamic-planing.xml and systems/hydrodynamic-planing-floats.xml.,systems/hydrodynamic-planing-floats.xml;systems/hydrodynamic-planing.xml,12,True,False
+ae318dea,2023-02-03,model,Fix roll autopilot command name in C172x,aircraft/c172x/c172x.xml,5,False,False
+464e5915,2022-06-18,cpp,Temporary fix for issue #654.,src/models/FGGasCell.cpp,4,True,False
+95e5a16b,2022-04-17,model,Fix the systems files to pass the XML validation.,systems/FCS-yaw.xml;systems/GNCUtilities.xml;systems/SensorImu.xml;systems/airship-mooring.xml;systems/airship_added_mass.xml;systems/fg_glue.xml;systems/hydrodynamics.xml;systems/sperry-a2-autopilot.xml;systems/visual-reference-point-extensions.xml,129,True,False
+4585ddd7,2022-03-19,cpp,Minor fixes and cosmetic changes.,src/math/FGTable.cpp;src/math/FGTable.h,45,False,False
+9e344564,2022-01-20,cpp,Fix errors in FGBrushlessDCMotor (#570),src/models/propulsion/FGBrushLessDCMotor.cpp,9,False,False
+29904e51,2021-12-28,cpp,Bug fix for issue #553,src/initialization/FGInitialCondition.cpp,31,False,False
+95b4c866,2021-12-23,cpp,Fix the sign for NED climb rate (#545),src/initialization/FGInitialCondition.h,4,True,False
+01da4616,2021-12-17,cpp,Added error handling in FGWaypoint in case a supplied or calculated latitude exceeds 90 degrees prior (#536),src/models/flight_control/FGWaypoint.cpp,22,False,False
+ddd025ae,2021-10-24,cpp,"Fixed a sign error in the computation of ""aero/h_b-mac-ft"" (#508)",src/models/FGAuxiliary.cpp,4,False,False
+bc62d30c,2021-07-17,cpp,Tentative fix for the issue #485.,src/models/flight_control/FGLinearActuator.cpp,27,True,False
+8819410c,2020-12-12,model,Fix negative drag due to elevator deflection (#358),aircraft/737/737.xml;aircraft/A4/A4.xml;aircraft/B17/B17.xml;aircraft/B747/B747.xml;aircraft/C130/C130.xml;aircraft/DHC6/DHC6.xml;aircraft/F4N/F4N-jsbsim.xml;aircraft/F4N/F4N.xml;aircraft/F80C/F80C.xml;aircraft/L17/L17.xml;aircraft/L410/L410.xml;aircraft/MD11/MD11.xml;aircraft/OV10/OV10.xml;aircraft/SGS/SGS.xml;aircraft/T37/T37.xml;aircraft/T38/T38.xml;aircraft/XB-70/XB-70.xml;aircraft/f15/f15.xml;aircraft/f22/yf22.xml;aircraft/fokker50/fokker50.xml;aircraft/minisgs/minisgs.xml;aircraft/p51d/p51d.xml;aircraft/pogo-jsbsim/pogo-jsbsim.xml;aircraft/sgs126/sgs126.xml;aircraft/sgs233/sgs233.xml,102,True,True
+4595a186,2020-12-06,cpp,Fixed FGMagnetometer which updated the magnetic field every time step.,src/models/flight_control/FGMagnetometer.cpp;src/models/flight_control/FGMagnetometer.h,16,True,False
+5e738cdf,2020-08-05,cpp,Fix one off error in array iteration (#311),src/models/flight_control/FGFilter.cpp,4,False,False
+ead61d5e,2019-11-30,cpp,Fixed the bind() method for aFunc<>.,src/math/FGFunction.cpp;src/math/FGFunction.h,54,False,False
+113e4a9e,2019-11-16,cpp,Fixed the bug reported in issue #235.,src/models/FGMassBalance.h,8,True,False
+06b6c2fc,2019-11-10,cpp,Fixed the bug reported in the GitHub issue #230.,src/models/FGMassBalance.cpp;src/models/FGMassBalance.h,28,False,False
+0d61e022,2019-09-21,cpp,Fix the bug reported in GH issue #211,src/models/flight_control/FGFCSComponent.cpp,20,False,False
+de6bbb1f,2019-08-03,cpp,Fixed the bug reported in issue #200.,src/models/flight_control/FGFCSComponent.cpp,4,False,False
+94d5877c,2019-04-22,cpp,Fixed the bug reported in issue #123 (wrong HR errors at high alt).,src/models/atmosphere/FGStandardAtmosphere.cpp;src/models/atmosphere/FGStandardAtmosphere.h,237,False,False
+4cdc72c6,2019-02-09,cpp,Fixed the bug reported in issue #163,src/math/FGMatrix33.cpp,41,False,False
+8a9fba1c,2018-12-27,cpp,Fixed a regression for the wheel rotation speed (issue #120),src/models/FGLGear.cpp,33,True,False
+00bf7b0d,2018-12-16,cpp,Small fixes to FGPropertyValue and code clean up.,src/math/FGPropertyValue.cpp;src/math/FGPropertyValue.h,48,False,False
+ac30e704,2018-11-25,cpp,Fixed FGSwitch: properties sign is managed by FGPropertyValue.,src/models/flight_control/FGSwitch.cpp;src/models/flight_control/FGSwitch.h,131,False,False
+7ad54315,2018-11-24,cpp,Fixed a number of bugs.,src/math/FGFunction.cpp,35,False,False
+50d810fd,2018-11-04,cpp,Fixed the bug occurring for the fail_hardover feature.,src/models/flight_control/FGActuator.cpp,4,False,False
+c21af41a,2018-11-02,cpp,Fixed the bug reported by @mike402 in issue #127,src/models/FGLGear.cpp;src/models/FGLGear.h,11,False,False
+f543d634,2018-10-28,cpp,Fixed the fail_stuck behavior (bug reported in issue #119),src/models/flight_control/FGSensor.cpp,10,True,False
+6adf2689,2018-10-27,cpp,Fixed the bug triggered by TestIntegrators.,src/models/flight_control/FGPID.cpp,4,False,False
+61f1e8c3,2018-10-17,cpp,Fixed the bug reported from FlightGear.,src/models/atmosphere/FGStandardAtmosphere.cpp,36,True,False
+c3fa7d22,2018-08-04,cpp,Correct sign for load factor - GetNlf() (#106),src/models/FGAuxiliary.cpp,4,True,False
+fc3b870f,2018-07-20,cpp,Channels: fixed for incorrect time steps caused by execrate (#92),src/models/FGFCS.cpp;src/models/FGFCSChannel.h;src/models/flight_control/FGFCSComponent.cpp;src/models/flight_control/FGFCSComponent.h,30,False,False
+cab90efc,2018-07-15,cpp,Improved configuration error detection in FGSwitch w.r.t. late bound properties.,src/models/flight_control/FGSwitch.cpp;src/models/flight_control/FGSwitch.h,25,False,False
+fd1ed150,2018-07-07,cpp,Fixed the P factors moments reported in text files.,src/models/propulsion/FGPropeller.cpp,13,True,False
+82cc3893,2018-07-05,cpp,Partial fix for issue #78 (reported by @dany93),src/models/propulsion/FGPropeller.cpp,7,True,False
+12808cc8,2018-07-05,cpp,Fixed the issue #86 (reported by Michael Danilov),src/models/atmosphere/FGStandardAtmosphere.cpp,3,False,False
+05b709c8,2018-06-23,cpp,Fixed the gradient that did not fade out beyond 91km.,src/models/atmosphere/FGStandardAtmosphere.cpp,7,True,False
+f42d3bcd,2018-06-16,cpp,Tested and fixed the temperature gradient feature,src/models/atmosphere/FGStandardAtmosphere.cpp,26,False,False
+a8517c19,2018-06-10,cpp,Fixed a bug due to uninitialized variables.,src/models/atmosphere/FGStandardAtmosphere.cpp,14,False,False
+f0e7d647,2018-06-09,cpp,Fixed the signature of FGStandardAtmosphere::CalculateDensityAltitude(),src/models/atmosphere/FGStandardAtmosphere.cpp;src/models/atmosphere/FGStandardAtmosphere.h,8,False,False
+e0cec95d,2018-06-09,cpp,Fixes to handle negative altitudes,src/models/atmosphere/FGStandardAtmosphere.cpp,22,False,False
+7a275c8c,2018-03-03,cpp,Improved error messages.,src/models/FGAerodynamics.cpp;src/models/FGAerodynamics.h,0,False,False
+9c058118,2018-03-03,model,Fix 'kink' in change in lift due to ground effect tables for C172x and B737,aircraft/737/737.xml;aircraft/c172x/c172x.xml,8,False,True
+a52d103b,2017-06-03,cpp,Fixes to the trim on ground feature.,src/initialization/FGTrim.cpp;src/models/FGLGear.cpp;src/models/FGSurface.cpp,56,False,False
+45837388,2017-03-11,cpp,Stricter checking in FGTable revived the bug [#84]. This commit provides a fix to the problem: the table name 'EnginePowerVC' is prepended with 'propulsion/engine[#]',src/models/propulsion/FGTurboProp.cpp,13,False,False
+2c9c8535,2017-03-11,cpp,Fixed the bug [#96] Table Independent Variables Not Indexed,src/math/FGFunction.cpp;src/math/FGFunction.h;src/math/FGTable.cpp;src/math/FGTable.h,82,False,False
+a2883b83,2017-03-11,cpp,Fixed a division by zero for gears that are not steerable,src/models/FGLGear.h,10,False,False
+7b081255,2016-07-03,cpp,Fixed the altitude setter such that it does not modify the specified geodetic latitude.,src/initialization/FGInitialCondition.cpp;src/initialization/FGInitialCondition.h,64,False,False
+66a679ed,2016-07-03,cpp,Fixed the corrections for the Pitot tube to take the sideslip into account.,src/initialization/FGInitialCondition.cpp,10,False,False
+4601b812,2016-06-26,cpp,Fixed the geodetic computations: now the altitude (ASL and AGL) is correctly set when a geodetic latitude is specified.,src/initialization/FGInitialCondition.cpp;src/initialization/FGInitialCondition.h,118,False,False
+a951a540,2016-06-12,cpp,Skip the retracted landing gears during the trim on ground since it will lead to an incorrect solution once the simulation will restart.,src/initialization/FGTrim.cpp,14,False,False
+98e1deb0,2016-06-05,cpp,"Fixed 2 bugs for the trim algorithm on ground. First, the algorithm was using the compressed contacts which was leading to incorrect placement once the aircraft was relocated with uncompressed contacts. Second, the order in which the rotations were applied was wrong and that was corrupting the trim solution for tail wheel aircrafts. Unfortunately the error was harmless for tricycle aircrafts which generally have small pitch angles when resting on ground.",src/initialization/FGTrim.cpp,26,False,False
+cea96ae2,2016-05-30,cpp,Final fix for bug SF#115: make sure that the property aero/cl-squared is getting huge values when qbar is close to zero.,src/models/FGAerodynamics.cpp,14,False,False
+888394fa,2016-05-23,cpp,Bug fix for the SF bug #115,src/models/FGAerodynamics.cpp,17,False,False
+6e325f02,2016-05-21,cpp,Fixed a divide-by-zero error when computing Vtdot,src/models/FGAuxiliary.cpp,6,False,False
+9d111248,2016-05-19,model,Fix the problem where the paraglider spins out of control with full aileron and the engine on,aircraft/paraglider/paraglider.xml,6,False,False
+15e96cf5,2016-05-16,cpp,"Shortened the succession of tests that determine if a landing gear is fixed, castered or steered",src/models/FGLGear.cpp,26,False,False
+c8a88770,2016-05-05,cpp,The grain density is now initialized from the tank capacity rather than from the tank initial content. Otherwise the tank inertia returns garbage when the initial content is set to a value different from the capacity and then modified (bug reported by Uriah George),src/models/propulsion/FGTank.cpp,29,False,False
+3ef90c9c,2016-04-17,cpp,Now uses the same Earth radius as the rest of JSBSim. Error messages now give the file name and line number at which the problem occurred. First use of simgear::PropertyObject in JSBSim as a proof of concept.,src/models/flight_control/FGWaypoint.cpp;src/models/flight_control/FGWaypoint.h,110,False,False
+df01c523,2016-04-16,cpp,Fixed a bug that prevented the systems to be correctly initialized (the second Run() from FGFDMExec::RunIC() was skipped).,src/models/FGFCSChannel.h,14,False,False
+ed4919d5,2016-04-03,cpp,Fixed channels to fix their behaviour after a reset. Also make sure that the frame counter is frozen when the integration is suspended (i.e. when dt == 0.0),src/models/FGFCS.cpp;src/models/FGFCSChannel.h,38,False,False
+5c415f27,2016-01-17,cpp,Fixed a bug which caused FGTrim::trimOnGround() to be initialized with the wrong ICs and prevented it to converge to the correct solution,src/initialization/FGTrim.cpp;src/initialization/FGTrimAxis.cpp,27,False,False
+090655f4,2016-01-17,cpp,Do not resume integration when looking for propulsion steady state otherwise it might have the side effect of igniting solid propellant rockets during trimming (bug reported in FG by Stefan Seifert),src/models/FGPropulsion.cpp,15,False,False
+14006889,2015-12-29,cpp,Fix a possible nan,src/initialization/FGTrim.cpp,10,False,False
+22c79e89,2015-12-13,cpp,Fixed a bug that prevented to store the list of engines that should be running at the start of a script,src/initialization/FGInitialCondition.cpp,6,False,False
+f3930ad2,2015-12-02,cpp,Fix div-by-0 in fuel temperature calculation.,src/models/propulsion/FGTank.cpp,6,False,False
+61529d67,2015-11-03,model,Remove a negative sign which was used as a test only,aircraft/Pterosaur/Systems/Wing Motion.xml,4,False,False
+ef3b6b9a,2015-09-27,cpp,Some further fixes to the reset of FGFilter,src/models/flight_control/FGFilter.cpp,10,False,False
+a36623c8,2015-09-27,cpp,Issues an error when the latitude is specified outside +/-90 deg or +/-pi/2 rad,src/initialization/FGInitialCondition.cpp,22,False,False
+fe3bcfca,2015-08-09,model,Refined the initial conditions to start in a configuration closer to the steady state. Also fixed the units of psi which are degrees,aircraft/c172r/reset00.xml,8,False,False
+26e114c1,2015-08-09,cpp,"Fixed the accelerometer that wrongly summed the gravity twice. It also overlooked the fact that (p,q,r) == (0,0,0) does not mean that (pi,qi,ri) == (0,0,0). As a consequence a centrifugal acceleration exists (albeit small) when (p,q,r) == (0,0,0). Bonus : the formula is now very similar to the acceleration at the pilot location (see FGAuxiliary.cpp)",src/models/flight_control/FGAccelerometer.cpp,9,False,False
+0b70efee,2015-07-14,model,A new test case for accelerometers checking that they are measuring 0g in orbit and 1g on ground or in steady flight. At the moment this test is failing. The fix is currently being peer reviewed.,systems/accelerometers.xml,36,True,False
+e39918de,2015-07-12,model,Fixed the p51d to be able to run in stand alone JSBSim again (see bug SF#103),aircraft/p51d/Systems/electrical.xml;aircraft/p51d/Systems/propulsion.xml;aircraft/p51d/p51d.xml,44,False,False
+529a6478,2015-04-08,model,Fixed an error where the input type was reported as unknown. UDPSOCKET has been recently renamed to QTJSBSIM.,aircraft/737/737.xml,6,False,False
+0735d502,2015-04-08,cpp,Adds details to the error message to help the user to locate the error in the XML files.,src/models/FGInput.cpp,7,False,False
+e82b5573,2015-04-07,model,Fix a wrong up-dow sign for structure points,aircraft/dr1/dr1.xml,14,False,False
+7678fbee,2015-02-01,cpp,Fuel tank inertias are now updated when FGTank::Fill and FGTank::SetContents are called (bug reported by Alan Teeder),src/models/propulsion/FGTank.cpp,9,False,False
+74371da1,2015-01-31,cpp,Fixed a bug that prevented the tanks inertias to be updated for liquid propellants (including fuel tanks if the <inertia_factor> and <radius> tags are defined). Bug reported by Alan Teeder.,src/models/propulsion/FGTank.cpp;src/models/propulsion/FGTank.h,55,False,False
+262bea3a,2014-11-18,cpp,James Turner fixed a clash between platforms that provide the function to_string in the C++ standard library and those who don't. Thanks to Jake Bailey for reporting the bug in the first place.,src/math/FGRealValue.cpp;src/math/FGRealValue.h,21,False,False
+553243a0,2014-08-28,cpp,"Following the bug report SF#111 and FG#1497, the conversion from cartesian coordinates to geodetic coordinates is now using Fukushima's algorithm instead of Sofair's. Fukushima's method has a much better numerical stability around the poles and does not produce NaNs for a spherical Earth.",src/math/FGLocation.cpp;src/math/FGLocation.h,163,False,False
+53d55ef5,2014-08-09,cpp,Bug fix so that the rate_limit is no longer ignored when set by a property.,src/models/flight_control/FGActuator.cpp,14,False,False
+c2c552b2,2014-07-18,cpp,Fixed the erratic behavior of <actuator> when <rate_limit> is read from a property.,src/models/flight_control/FGActuator.cpp,14,False,False
+79606af6,2014-07-16,cpp,Fix for the bug reported in the FlightGear issue 1503 : JSBSim hangs when using the 'sense' parameter of the actuator rate_limit element,src/models/flight_control/FGActuator.cpp,8,False,False
+56913ebe,2014-05-17,cpp,Fixed a divide-by-zero bug in oxidizer calculation and added support for descriptive name in propulsion models,src/models/FGPropulsion.cpp,28,False,False
+8716f5c3,2014-03-10,cpp,Fixed a slight error in reference radius,src/models/FGInertial.cpp,6,False,False
+a6f58571,2014-02-01,model,Fix an XML mismatch,aircraft/DHC6/DHC6.xml,9,False,False
+987e4c50,2014-01-28,model,Fix aileron tables,aircraft/fokker100/fokker100.xml;aircraft/fokker100/info.txt,52,False,False
+b33473d9,2014-01-02,cpp,Fixed how the classes reset to the ICs,src/models/FGAerodynamics.cpp;src/models/FGAircraft.cpp;src/models/FGBuoyantForces.cpp;src/models/FGExternalReactions.cpp;src/models/FGGroundReactions.cpp;src/models/FGLGear.cpp;src/models/FGLGear.h;src/models/FGMassBalance.cpp;src/models/FGPropulsion.cpp;src/models/flight_control/FGActuator.cpp;src/models/flight_control/FGActuator.h;src/models/flight_control/FGFCSComponent.cpp;src/models/flight_control/FGFCSComponent.h;src/models/flight_control/FGFilter.cpp;src/models/flight_control/FGFilter.h;src/models/flight_control/FGPID.cpp;src/models/flight_control/FGPID.h;src/models/flight_control/FGSensor.cpp;src/models/flight_control/FGSensor.h,235,False,False
+3f712a04,2013-12-15,cpp,Fixed a mismatched delete,src/models/atmosphere/FGMSIS.cpp,6,False,False
+42a80bf9,2013-11-29,cpp,"Fix for FlightGear bug #1238: the accelerations, velocities, etc. are now updated to a consistent set of values prior to exiting the trim routines.",src/initialization/FGTrim.cpp,13,False,False
+061fe149,2013-11-24,cpp,Restore the original initial conditions when trim is failing (this is a fix for the bug #1238 of FlightGear).,src/initialization/FGTrim.cpp;src/initialization/FGTrim.h;src/initialization/FGTrimAxis.cpp;src/initialization/FGTrimAxis.h;src/math/FGQuaternion.h,438,False,False
+1eb32f22,2013-11-17,cpp,Fixed some uninitialized var bugs in distributor,src/models/flight_control/FGDistributor.h,11,False,False
+92d418de,2013-11-10,cpp,Make sure that the side force coefficient is updated whence the static coefficient is changed through the property tree. Bug reported by Michael Soitanen.,src/models/FGLGear.cpp;src/models/FGLGear.h,22,False,False
+2f71a26d,2013-09-11,cpp,Fixed an annoying error that cause some velocity calculations to fail,src/models/FGAuxiliary.cpp,6,False,False
+99033ca1,2013-06-10,cpp,Fixed line endings,src/math/FGFunction.h,10,False,False
+f34c65de,2013-06-10,cpp,fixed inaccurate rate limit check in actuator,src/models/flight_control/FGActuator.cpp,7,False,False
+7cc7d7be,2013-02-23,cpp,Fixed a bug that made FlightGear resetting to fail,src/math/FGFunction.cpp,14,False,False
+88cc654c,2013-01-12,cpp,Fixed uninitialized variables,src/models/propulsion/FGRocket.cpp;src/models/propulsion/FGThruster.cpp,10,False,False
+c4141167,2013-01-06,model,Change the landing gear retractable status from the invalid FIXED to 0,aircraft/dr1/dr1.xml,8,False,False
+0a88fea0,2012-11-23,cpp,Better handling of errors in the 'set' command and fixed the 'get' command so that it returns the property catalog when it is required to.,src/models/FGInput.cpp,28,False,False
+80076643,2012-10-27,cpp,Modified/fixed switch/condition code,src/math/FGCondition.cpp;src/math/FGCondition.h;src/models/flight_control/FGSwitch.cpp;src/models/flight_control/FGSwitch.h,245,False,False
+fed0b8bf,2012-08-20,cpp,Fixed atmosphere untie problem; patch from akhamutov,src/models/FGAtmosphere.cpp;src/models/FGAtmosphere.h,41,False,False
+6474a2d1,2012-07-19,cpp,Fixed a bug where a structural to Body frame conversion was being doen twice for tanks.,src/models/FGPropulsion.cpp,9,False,False
+a507e30f,2012-06-10,cpp,Fixed an error in the correction applied to the induced velocity when the momentum theory is no longer applicable,src/models/propulsion/FGPropeller.cpp,11,False,False
+6d0583dd,2012-02-11,cpp,Adjust VInduced formula to handle sign (direction) separately from magnitude.,src/models/propulsion/FGPropeller.cpp,16,False,False
+61cc79c7,2012-02-05,cpp,Fixed SF bug #3483160 : 'Ifthen' operator in FGFunction fails (Thanks to Matthew Gong for the bug fix),src/math/FGFunction.cpp,6,False,False
+b52dffc7,2012-01-16,model,"Remove extraneous lines, fix configuration name.",aircraft/weather-balloon/weather-balloon.xml,28,False,False
+7c4ff8ef,2012-01-15,model,Fixed incorrect quote marks,aircraft/ah1s/ah1s.xml,8,False,False
+0a033426,2012-01-14,cpp,Fixed a bug in the IC initialization: attitude rates given in the local frame were not converted to the body frame,src/initialization/FGInitialCondition.cpp,20,False,False
+c4d98eef,2011-12-22,cpp,Fix for SF bug #3171743 - P-factor does not take into account the thruster pitch and yaw angles,src/models/propulsion/FGPropeller.cpp,51,False,False
+47cf185c,2011-12-21,model,Add Helical Mach to the 75in fixed pitch propeller,engine/prop_75in2f.xml,19,True,False
+15a8f9cd,2011-11-09,cpp,Fixed SetUVW and SetPQR so that their action result in the aircraft velocities to be actually modified,src/models/FGPropagate.h,14,False,False
+15a02be3,2011-11-09,cpp,Fixed uninitialized values (thanks to A. Greab for the report),src/initialization/FGInitialCondition.cpp,10,False,False
+5fa49302,2011-10-22,cpp,Fixed a bug where the pressure was not updated with the new altitude in SetAltitudeASLFtIC(). Also use Atmosphere instead of fdmex->GetAtmosphere,src/initialization/FGInitialCondition.cpp,35,False,False
+eff888d4,2011-10-22,cpp,Reverse the sign in aerodynamic reference point shift apparently mistakenly reversed in revision 1.39,src/models/FGAerodynamics.cpp,8,False,False
+8ba151ee,2011-09-25,cpp,Fixed SF bug #3349235 (PostLoad not run for FGFCS components),src/models/FGFCS.cpp,6,False,False
+7df4571b,2011-09-18,cpp,Minor fixes from R.B. Davidson (SourceForge bug #3161228),src/models/propulsion/FGTank.cpp;src/models/propulsion/FGTank.h,12,False,False
+000e8ad5,2011-09-18,cpp,Fixes from Matthew Gong (SourceForge bug #3364332),src/models/atmosphere/FGStandardAtmosphere.cpp;src/models/atmosphere/FGStandardAtmosphere.h,18,False,False
+82b12eb1,2011-09-18,model,fix a speedbrake issue,aircraft/f16/f16.xml,6,False,False
+9d0de65f,2011-09-17,cpp,Fixed the reset issue with Flight Gear,src/models/FGPropagate.cpp,12,False,False
+ccfc63cb,2011-09-12,cpp,Added T.Kreitler's rotor fixup patch (line endings fix),src/models/propulsion/FGRotor.cpp,6,False,False
+9a8f8215,2011-08-30,cpp,Fixed the wheel roll & side forces getters,src/models/FGLGear.cpp;src/models/FGLGear.h,39,False,False
+6dcd09c7,2011-07-27,cpp,Fixed valgrind error (RJensen),src/models/propulsion/FGPropeller.cpp,8,False,False
+686f8a90,2011-07-12,cpp,"Fixed initial conditions handling of winds specified in initialization file. Sign was wrong on headwind calculations so a headwind increased the takeoff roll! :-) Now it is right. Also, verified unit conversion correctness",src/initialization/FGInitialCondition.cpp,31,False,False
+03543fc2,2011-07-12,cpp,Fixed the logging of fuel in mass properties reports,src/models/FGMassBalance.cpp,6,False,False
+5306a18b,2011-06-30,model,"Fixed thrust property name change, and added forward declaration of holdback-cmd property.",systems/holdback.xml,8,True,False
+55899589,2011-06-23,cpp,Temporary fix for density and pressure altitude,src/models/FGAtmosphere.cpp;src/models/FGAtmosphere.h;src/models/atmosphere/FGStandardAtmosphere.cpp;src/models/atmosphere/FGStandardAtmosphere.h,45,False,False
+6ab031c2,2011-06-16,cpp,Added delay to switch component and fixed delay logic,src/models/flight_control/FGFCSComponent.cpp;src/models/flight_control/FGFCSComponent.h;src/models/flight_control/FGSwitch.cpp,28,False,False
+56b5df7a,2011-06-13,cpp,Corrects an error I introduced in a previous commit. Thanks to D. Linse for catching it.,src/initialization/FGInitialCondition.cpp,6,False,False
+ce4b5350,2011-06-12,cpp,Corrected an error in the conversion from EAS to TAS velocities,src/initialization/FGInitialCondition.cpp,14,False,False
+e6d383f0,2011-05-20,cpp,Applied Matthew Gong's bug fix #3303920 for setting the IC climb rate,src/initialization/FGInitialCondition.cpp;src/initialization/FGInitialCondition.h,36,False,False
+3eb500f7,2011-05-13,cpp,"Fixed the bug where the history of the lag, actuator rate limit and hysteresis were not updated during trimming causing it to move after the trimming was completed",src/models/flight_control/FGActuator.cpp,11,False,False
+2feebb92,2011-05-04,cpp,Fixed a bug where VCAS was incorrectly updated by calling FGInitialCondition::SetAltitudeASLFtIC,src/initialization/FGInitialCondition.cpp,12,False,False
+c7df727d,2011-03-03,cpp,"From Scott, this implements a new tied property /bleed-factor and /fuel-used-lbs and a fix for calling EngineResetIC() in the parent class for FGTurbine.cpp",src/models/propulsion/FGEngine.cpp;src/models/propulsion/FGEngine.h;src/models/propulsion/FGTurbine.cpp,25,False,False
+caf49495,2011-02-25,model,Fixed J246 makefile.am,aircraft/J246/Systems/Makefile.am,3,False,False
+8cbae84b,2011-02-17,cpp,Added Andreas Gaeb's FGForce initialization fix,src/models/propulsion/FGForce.cpp,21,False,False
+2013d94c,2011-01-26,cpp,Fix an initialization bug upon reset,src/models/FGPropagate.cpp,10,False,False
+0ac57fb2,2011-01-23,cpp,Fixed a bug where the variable sea_level_radius was used before it was set,src/initialization/FGInitialCondition.cpp,8,False,False
+dcbafd4f,2011-01-19,cpp,Fixed a bug in SetAltitudeASLFtIC() where the airspeed was correctly updated but not the altitude itself (reported by Andreas Gaeb),src/initialization/FGInitialCondition.cpp,6,False,False
+cc68cb24,2011-01-19,cpp,Patch from RJensen incorporated that fixes an erroneous error message with some aerodynamics axis specifications,src/models/FGAerodynamics.cpp,17,False,False
+efe8b958,2011-01-16,cpp,"Fixed a stupid bug : <altitude> in IC v1 is above ground level, not above sea level",src/initialization/FGInitialCondition.cpp,6,False,False
+6aa41583,2011-01-16,cpp,Fixes a breach in data encapsulation,src/initialization/FGInitialCondition.h;src/models/FGPropagate.cpp;src/models/FGPropagate.h,43,False,False
+3da53943,2010-12-30,cpp,Minor fixes to rocket class,src/models/propulsion/FGRocket.cpp,8,False,False
+abdc4fbc,2010-12-12,model,add make check capability and fix some (but not all) issues.,aircraft/f22/Makefile.am;aircraft/f22/f22.xml,57,False,False
+9d764a34,2010-12-07,model,Patch to fix aircraft,aircraft/A4/A4.xml;aircraft/J246/J246.xml;aircraft/ball/ball.xml;aircraft/c172x/c172x.xml;aircraft/f16/Systems/pushback.xml,234,False,False
+23aaf4b7,2010-12-06,model,'make check' fixes for aircraft validation,aircraft/f104/Makefile.am;aircraft/f104/Systems/Makefile.am,12,False,False
+b468adaf,2010-11-28,model,"Fix table layour, by Dennis Linse",aircraft/SGS/SGS.xml;aircraft/minisgs/minisgs.xml,40,False,False
+c92984dd,2010-11-28,model,"Fix engine location, by Ron Jensen",aircraft/dr1/dr1.xml,6,False,False
+5435d7e8,2010-11-26,model,fix the Cma table.,aircraft/dr1/dr1.xml,4,True,False
+5dd5a3c7,2010-11-20,cpp,Fixed the aero angles calculations when setting initial conditions (also fixes SF bug #3107233),src/initialization/FGInitialCondition.cpp;src/initialization/FGInitialCondition.h,79,False,False
+7c7a3cf9,2010-11-17,cpp,Fixed a silly bug for when you want to set engines running. IMPORTANT,src/initialization/FGInitialCondition.cpp;src/initialization/FGInitialCondition.h;src/models/FGAtmosphere.cpp;src/models/FGModel.h;src/models/FGPropulsion.cpp,72,False,False
+063ad544,2010-11-05,cpp,Fixed (I believe) an error in the declaration of the quaternion and location classes,src/math/FGLocation.h;src/math/FGQuaternion.h,14,False,False
+97386015,2010-10-21,cpp,Fixes to table class from Andreas G�b,src/math/FGTable.cpp,44,False,False
+ee8036ae,2010-10-21,cpp,Fixed a sign error in prop torque calc and power required per Torsten's observation of the problem,src/models/propulsion/FGPropeller.cpp,6,False,False
+870bc3f5,2010-10-15,cpp,Added needed catch() blocks and more error checking,src/math/FGTable.cpp;src/models/FGAerodynamics.cpp;src/models/FGPropulsion.cpp;src/models/propulsion/FGEngine.cpp;src/models/propulsion/FGPropeller.cpp,119,False,False
+b6cf998c,2010-10-10,cpp,Fixed/improved a calculation,src/models/FGAuxiliary.cpp,7,False,False
+7712d3aa,2010-10-10,cpp,Improved error checking/handling in FGTable,src/math/FGTable.cpp;src/models/FGAerodynamics.cpp,25,False,False
+13eed08d,2010-10-07,cpp,Ron's patch to fix alpha and beta rate calcs at low velocity,src/models/FGAuxiliary.cpp,8,False,False
+f8250741,2010-10-05,cpp,Further enhancements to the EOM and fixes for gear drift.,src/models/FGPropagate.cpp,14,False,False
+66e39304,2010-09-29,model,Fixed bad property name in B747,aircraft/B747/B747.xml,6,False,False
+f1e2d0bd,2010-09-22,cpp,Fixed some code to prevent divide by zeroes,src/math/FGLocation.cpp,14,False,False
+f13e41ee,2010-08-31,cpp,Added Bertrand's EOM fixes,src/models/FGPropagate.cpp;src/models/FGPropagate.h;src/models/propulsion/FGTurbine.cpp,42,False,False
+934def9d,2010-08-28,cpp,More fixes to model functions,src/math/FGFunction.cpp;src/math/FGModelFunctions.cpp,45,False,False
+e61a6474,2010-08-28,cpp,Added Bertrand's fix for moving ground (i.e. carrier landings),src/models/FGPropagate.cpp;src/models/FGPropagate.h,34,False,False
+2b19a97c,2010-08-24,cpp,Fixed a logging destination in FGGain,src/models/flight_control/FGGain.cpp,6,False,False
+250fb8bf,2010-08-22,cpp,Fix stupid error in FGAtmosphere density altitude calc (Thanks Dennis),src/models/FGAtmosphere.cpp,6,False,False
+93268836,2010-08-11,model,Made a mistake with the new f16 systems directory makefile,aircraft/f16/Systems/Makefile.am,6,False,False
+89be12c8,2010-08-11,cpp,Line difference changes fixed,src/models/FGAtmosphere.cpp,8,False,False
+db0fd766,2010-08-08,cpp,Added Bertrand's fix in the column vector class,src/math/FGColumnVector3.cpp,9,False,False
+afea7ce4,2010-08-04,cpp,Fix an Earth rotation startup problem as reported by Gerard,src/math/FGLocation.h,8,False,False
+702c7d4d,2010-07-30,model,getting rid of error,aircraft/J246/Systems/J246GuidanceExecutive.xml,5,True,False
+919db6f1,2010-07-27,cpp,Fixed normal accel calculation in G's to use sea level accel,src/models/FGAuxiliary.cpp,8,False,False
+aeb0b835,2010-07-25,cpp,Fixed radius calculation so it will work with FlightGear,src/math/FGLocation.h,9,False,False
+5bee41e8,2010-07-08,model,Fixed line ending problem,aircraft/f22/f22.xml,5782,False,False
+a73e55dd,2010-07-06,model,Various fixes to aircraft,aircraft/J246/.cvsignore;aircraft/J246/Systems/.cvsignore;aircraft/ah1s/.cvsignore;aircraft/ball/ball.xml;aircraft/ball/reset00.xml;aircraft/p51d/Engines/.cvsignore;aircraft/p51d/Engines/P51prop.xml;aircraft/p51d/Systems/.cvsignore;aircraft/p51d/Systems/autothrottle.xml;aircraft/p51d/Systems/compressability.xml;aircraft/p51d/Systems/propulsion.xml;aircraft/p51d/p51d.xml,368,False,False
+c145bdac,2010-07-02,cpp,Fixed order of execution in FGPropagate so that no energy is lost or gained in orbital calculations,src/models/FGPropagate.cpp,8,False,False
+4d67048e,2010-07-02,cpp,Fixed order of execution in FGPropagate so that no energy is lost or gained in orbital calculations,src/models/FGPropagate.cpp,40,False,False
+15a71284,2010-05-02,cpp,Fixed some problems in FGPropeller,src/models/propulsion/FGPropeller.cpp,8,False,False
+97e16b9e,2010-03-30,cpp,Fix to the propeller model involving gear ratios,src/models/propulsion/FGPropeller.cpp,8,False,False
+21396c0c,2010-03-14,cpp,RJensen's mixture fix for the psiton engine model,src/models/propulsion/FGPiston.cpp,13,False,False
+fe4d1311,2010-03-04,cpp,Fixed the quaternion inverse calc,src/math/FGQuaternion.h,6,False,False
+21020009,2010-02-14,cpp,Made some fixes to the quaternion class to get same results from Windows executable as gcc.,src/math/FGQuaternion.cpp;src/math/FGQuaternion.h,39,False,False
+a01d4efd,2010-01-27,cpp,Fix for hold-down feature,src/models/FGAircraft.cpp,6,False,False
+f12ed89b,2010-01-27,cpp,Spelling fix,src/models/FGMassBalance.cpp,6,False,False
+0f20d2ce,2010-01-24,cpp,"Some fixes to the rocket tank functionality. Previously, and subsequent to the new <priority> tag for tanks, rocket tanks did not deplete correctly. Now, they do.",src/models/propulsion/FGRocket.cpp;src/models/propulsion/FGTank.cpp,39,False,False
+e3be37f4,2009-11-19,model,"flaperons instead of ailerons, mostly cosmetic but also fix lift due to flaperons.",aircraft/f16/f16.xml,344,False,False
+b206bd1a,2009-11-12,cpp,Added a property name fix to FGFunction::bind(),src/math/FGFunction.cpp,11,False,False
+584e2b15,2009-10-19,cpp,Removed code from ConsumeFuel() which failed due to rounding error.,src/models/propulsion/FGEngine.cpp,14,False,False
+21d86efa,2009-10-15,cpp,Changed starting fuel flow. Fixed aborted start behavior.,src/models/propulsion/FGTurbine.cpp,17,False,False
+8d996ec4,2009-10-15,cpp,This is the looping fix.,src/models/propulsion/FGEngine.cpp,6,False,False
+620feb07,2009-10-15,cpp,fixed egngine feed bug,src/models/propulsion/FGEngine.cpp,37,False,False
+e0bdef76,2009-10-07,cpp,Small fix for FGRocket to use the new fuel tank selection logic,src/models/propulsion/FGRocket.cpp,12,False,False
+63b15bf0,2009-09-28,cpp,YARJEF (Yet Another Ron Jensen Engine Fix) :-),src/models/propulsion/FGPiston.cpp;src/models/propulsion/FGPiston.h,15,False,False
+e44a2a75,2009-09-27,cpp,Fixed fuel flow while siezed.,src/models/propulsion/FGTurbine.cpp,13,False,False
+1f32ffef,2009-09-27,cpp,More FGPiston fixes by Ron Jensen,src/models/propulsion/FGPiston.cpp,8,False,False
+e28f37bb,2009-08-31,cpp,"Bertrand Coconnier: Additionally to the original fix (problem with the Tec2b matrix initialization) I have modified the code for the ""STRUCTURE"" contacts in order not to generate NaNs when the z direction of the body frame is normal to the ground normal. Now there should no longer be any NaN generated by the landing gear code.",src/models/FGLGear.cpp;src/models/FGPropagate.cpp,66,False,False
+954f0087,2009-08-30,cpp,Fixed a type in FGPiston,src/models/propulsion/FGPiston.cpp,6,False,False
+42e1733c,2009-07-29,cpp,Fixed an uninitialized term in landing gear model,src/models/FGLGear.cpp,5,False,False
+3366192b,2009-07-27,cpp,Added probable fix of landing gear drift with non-zero pitch angle; fix provided by bertrand Cocconier,src/models/FGLGear.cpp,30,False,False
+a02520c8,2009-06-04,cpp,Fixed some error massages.,src/models/flight_control/FGSwitch.cpp,18,False,False
+633cc2fa,2009-06-02,cpp,May now provide a property for deadband width. Fixed reporting of gain and deadband inputs (echoing),src/models/flight_control/FGDeadBand.cpp;src/models/flight_control/FGDeadBand.h;src/models/flight_control/FGGain.cpp,49,False,False
+d214cbce,2009-03-25,cpp,Fix array out of bounds.  Thanks Melchior.,src/models/atmosphere/FGMSIS.h,8,False,False
+a9fa03ab,2009-03-15,cpp,"Fixed messages that come out of flight control property usage; still needs to be adjusted for use in FlightGear, as messages may not be desirable there.",src/models/FGFCS.cpp,31,False,False
+52c5fcce,2009-02-25,cpp,Fixed property names generated for sensors and actuators,src/models/flight_control/FGActuator.cpp;src/models/flight_control/FGSensor.cpp,18,False,False
+5e141e47,2009-02-06,cpp,This should fix a specific error being caused as a Triangle Intersect error in FlightGear,src/models/propulsion/FGTank.cpp,16,False,False
+f7a77fa9,2009-01-01,model,Fixes and adjustments to the B-17 engine and propeller,engine/R-1820-97.xml;engine/propHS139v.xml,63,False,False
+054a9e53,2008-11-23,cpp,Ron Jensen: Fix boosted MAP calculation.,src/models/propulsion/FGPiston.cpp,8,False,False
+769f73db,2008-08-25,cpp,Fixed messed-up Makefile.am - happened when I removed FGGradient,src/models/flight_control/Makefile.am,4,False,False
+b743e877,2008-08-14,model,Fixed some bad trigonometry and retuned engine and propeller.,aircraft/Submarine_Scout/Submarine_Scout.xml;engine/eng_RRhawk.xml;engine/prop_SSZ.xml,171,False,False
+2ad4ceeb,2008-08-14,model,Compenstae for 1G (gravity) towards the ground and (almost) fix the speedbrake pitch up moment problem,aircraft/f16/f16.xml,107,False,False
+d3d29d45,2008-08-08,model,"Fix the roll handling of the aircraft, this should eliminate the last pid wind-up problem",aircraft/f16/f16.xml,44,False,False
+0cd4fd76,2008-08-01,model,Fixes for the c172p,aircraft/c172p/c172p.xml,10,False,False
+70846d14,2008-07-13,model,"* It occured to me that the ""full up after parking brake"" problem probably was   due to too much weight on the nosewheel, probably caused by a slightly   misplaced center of gravitiy. This is fixed now. * Adjust the yaw PID controller some more. Now it seems ok to me. * Don't test for gear down when extending the flaps. This is handled by the   speed test alread.",aircraft/f16/f16.xml,28,False,False
+4c7f8458,2008-07-07,model,Fix a rudder wind-up problem,aircraft/f16/f16.xml,6,False,False
+cf551648,2008-05-28,cpp,Fixed a small error in initialization,src/initialization/FGInitialCondition.cpp,24,False,False
+b7c2ef7f,2008-05-25,cpp,Fixed an error in the actuator model; reported from a user (thanks),src/models/flight_control/FGActuator.cpp,12,False,False
+8dd15c04,2008-05-24,model,Fixed a makefile,aircraft/c172x/Makefile.am,3,False,False
+5cb9cf06,2008-04-26,cpp,Fix to geodetic calculation,src/math/FGLocation.cpp,12,False,False
+f442f09a,2008-04-16,cpp,Made a fix of sorts to the uninitialized b2 variable bug in FGLocation,src/math/FGLocation.cpp,68,False,False
+f9048c5d,2008-04-11,cpp,Small performance fix.,src/models/FGLGear.cpp;src/models/FGLGear.h,34,False,False
+3d9dc7d4,2008-03-09,cpp,Some small fixes to trimming code,src/initialization/FGTrimAnalysis.cpp,23,False,False
+85076677,2008-03-01,cpp,Indexing problem fixed in the external forces code thanks to a report by Csaba Halasz,src/models/FGExternalForce.cpp;src/models/FGExternalForce.h,24,False,False
+484e93e5,2008-02-17,cpp,Fixed an uninitialized radius problem in propagation code,src/models/FGPropagate.cpp;src/models/FGPropagate.h,26,False,False
+8e8b808f,2008-02-16,cpp,Fixed a units problem in FGAerodynamics,src/models/FGAerodynamics.cpp,24,False,False
+5a8114ae,2008-01-06,cpp,Made a fix to storage of systems components,src/models/FGFCS.cpp;src/models/FGFCS.h,55,False,False
+3278eead,2008-01-05,cpp,Fixed system implementation so that system terms are logged,src/models/FGFCS.cpp,40,False,False
+fdb4607c,2008-01-05,cpp,Fixed system definition so it actually executes,src/models/FGFCS.cpp,8,False,False
+ee7281ba,2008-01-03,cpp,Small fix with condition tests,src/models/flight_control/FGSwitch.cpp,7,False,False
+0a8a3b69,2007-11-13,cpp,Candidate fix for PID controller,src/models/flight_control/FGPID.cpp;src/models/flight_control/FGPID.h,30,False,False
+87f16432,2007-11-12,cpp,Corrected a bug found by HD Wysong in the flight control FCSComponent,src/models/flight_control/FGFCSComponent.cpp,16,False,False
+bfc571ce,2007-10-22,cpp,Fixed extraneous .xml in file name for aerodynamics,src/models/FGAerodynamics.cpp,6,False,False
+0d118927,2007-10-17,cpp,Fixed alphalimits and hysteresis limits units problem,src/models/FGAerodynamics.cpp,17,False,False
+d14326bb,2007-10-17,model,Fixed alphalimits and hysteresis limits units problem,aircraft/c172p/c172p.xml;aircraft/c172x/c172x.xml,66,False,False
+86a9752b,2007-10-10,cpp,Fixed uninitialized variables; patch by Anders Gidenstam,src/models/FGLGear.cpp,13,False,False
+2286b600,2007-09-19,cpp,"Fixed some issues involving properties (with signs) in filter coefficient definitions, as well as to make clipping and clip specification echoing at load time correct and homogenous across components",src/models/flight_control/FGDeadBand.cpp;src/models/flight_control/FGFCSComponent.cpp;src/models/flight_control/FGFCSFunction.cpp;src/models/flight_control/FGFilter.cpp;src/models/flight_control/FGSensor.cpp;src/models/flight_control/FGSummer.cpp,78,False,False
+fbc78441,2007-09-18,cpp,Fixed Makefile.am for IRIX,src/initialization/Makefile.am,4,False,False
+a70a1c90,2007-08-15,cpp,Fixed unit problem and added new capabilities to initial conditions for new trim,src/initialization/FGInitialCondition.cpp;src/initialization/FGInitialCondition.h,81,False,False
+52fe5d10,2007-08-10,cpp,Fixed the vertical tail volume calculation,src/models/FGAircraft.cpp,6,False,False
+f0448949,2007-08-10,cpp,Fixed a sign problem when the xz product of inertia is set and transformed to the body frame from the structural frame in which the inertias are defined.,src/models/FGMassBalance.cpp,8,False,False
+0f94e592,2007-08-09,cpp,"Removed incorrect extra 'Sense' variable in moment calculation thanks to investigation by Torsten Dreyer; the error had the effect of negating the inclusion of rotational sense consideration, rendering counterrotating props not counterrotating",src/models/propulsion/FGPropeller.cpp,6,False,False
+9f2194d7,2007-05-24,cpp,Fix landing gear data logging,src/models/FGGroundReactions.cpp,12,False,False
+10b14a07,2007-05-22,model,Fixed small mistake in the C310 autopilot implementation ofthe haversine formula,aircraft/c310/c310ap.xml,4,False,False
+80574555,2007-05-12,cpp,Implemented Matthew Gongs atan2 fixes in FGAuxiliary,src/models/FGAuxiliary.cpp,19,False,False
+2f81b93d,2007-05-12,cpp,Fixed a problem with turn coordinator bounding while at rest on the runway,src/models/FGAuxiliary.cpp,12,False,False
+3ad36383,2007-04-29,cpp,Added a helpful error message for a situation that bit me real good: when a property is specified in a function but outside of the <property></property> tags,src/math/FGFunction.cpp,14,False,False
+24a25540,2007-03-24,cpp,Fix to PID controller anti-windup logic,src/models/flight_control/FGActuator.h;src/models/flight_control/FGPID.cpp,41,False,False
+77bd9475,2007-03-03,cpp,Fixes to the actuator,src/models/flight_control/FGActuator.cpp;src/models/flight_control/FGActuator.h;src/models/flight_control/FGFCSComponent.cpp;src/models/flight_control/FGSensor.cpp,125,False,False
+f733c462,2007-03-01,cpp,Fixed hysteresis in new actuator code,src/models/flight_control/FGActuator.cpp;src/models/flight_control/FGActuator.h,38,False,False
+5a38d072,2007-02-13,cpp,"MOdifications to fix thrust vectoring/gimbaling, etc.",src/models/propulsion/FGForce.cpp;src/models/propulsion/FGForce.h;src/models/propulsion/FGNozzle.cpp,59,False,False
+b99f248c,2007-01-21,model,Fix a small bug,aircraft/pc7/pc7.xml,6,False,False
+9556efb8,2007-01-18,cpp,Fixed (possibly) the in-air WOW problem,src/models/FGLGear.cpp,6,False,False
+3be71976,2007-01-15,model,Fix an aeromatic bug.,aircraft/A4/A4.xml,10,True,False
+e83294fe,2006-11-29,cpp,Torsten's piston engine temperature fixes,src/models/propulsion/FGPiston.cpp,22,False,False
+b7234118,2006-11-22,cpp,Fixed error in new gear code,src/models/FGLGear.cpp,6,False,False
+7161463d,2006-09-14,cpp,fix a boo-boo,src/models/FGPropagate.cpp,26,False,False
+1bfc3afa,2006-09-10,cpp,Fixed a logging problem with the aerodynamics code,src/models/FGAerodynamics.cpp,16,False,False
+e83ebb37,2006-08-03,cpp,Corrected mistake in Euler rate calculations based on McFarland paper (which was in error in that respect),src/models/FGAuxiliary.cpp,7,False,False
+7c1a6d19,2006-06-10,cpp,Added aero reference point offset fix (ft to inches),src/models/FGAerodynamics.cpp;src/models/FGAerodynamics.h,34,False,False
+5660626b,2006-05-17,model,Fixed/updated some initialization files,aircraft/B747/reset00.xml;aircraft/C130/reset00.xml;aircraft/T37/reset00.xml;aircraft/X15/reset00.xml;aircraft/X15/reset01.xml;aircraft/XB-70/reset00.xml;aircraft/ball/reset00.xml;aircraft/ball/reset01.xml;aircraft/c172p/reset00.xml;aircraft/c172p/reset01.xml;aircraft/c172r/reset00.xml;aircraft/c172r/reset01.xml;aircraft/c182/reset00.xml;aircraft/minisgs/reset00.xml;aircraft/mk82/reset00.xml;aircraft/pa28/reset00.xml;aircraft/shuttle/reset00.xml;aircraft/x24b/reset00.xml,392,False,False
+467b5d85,2006-05-06,model,Fixed bad XML,engine/prop_PT6.xml,4,True,False
+8b976327,2006-04-28,cpp,Fix some binding problem in propulsion,src/models/FGPropulsion.cpp,8,False,False
+75b9b1e8,2006-03-24,model,Fixes to Boeing314 model,aircraft/Boeing314/Boeing314.xml,14,True,False
+100bd528,2006-03-19,cpp,"Fixed problem where with multiple engines and a common tank, the startved flag was not set for second engine and so on",src/models/propulsion/FGEngine.cpp,9,False,False
+07a7c656,2006-03-19,cpp,Fix for table 3D problem,src/math/FGTable.cpp,30,False,False
+87a3ab84,2006-03-10,cpp,fixing conversion error,src/models/propulsion/FGPiston.cpp,10,False,False
+7a1dd8d4,2006-03-07,model,Aircraft fixes and upgrades,aircraft/Boeing314/Boeing314.xml;aircraft/c172p/c172p.xml;aircraft/c172r/c172r.xml,585,False,False
+81ba0d54,2006-03-07,cpp,Fixed the call to abs to fabs,src/math/FGFunction.cpp;src/models/atmosphere/FGMSIS.cpp,14,False,False
+483df556,2006-03-03,cpp,Fix for uninitialized gear variable,src/models/FGLGear.cpp,5,False,False
+e49e4950,2006-02-26,model,Fixed flaps in aircraft models and added normalized flaps for animation,aircraft/747/747.xml;aircraft/A320/A320.xml;aircraft/A380/A380.xml;aircraft/B747/B747.xml;aircraft/C130/C130.xml;aircraft/DHC6/DHC6.xml;aircraft/F80C/F80C.xml;aircraft/L17/L17.xml;aircraft/L410/L410.xml;aircraft/MD11/MD11.xml;aircraft/SGS/SGS.xml;aircraft/T37/T37.xml;aircraft/T38/T38.xml;aircraft/XB-70/XB-70.xml;aircraft/c172p/c172p.xml;aircraft/c172r/c172r.xml;aircraft/c172x/c172x.xml;aircraft/c182/c182.xml;aircraft/c310/c310.xml;aircraft/f104/f104.xml;aircraft/f22/f22.xml;aircraft/minisgs/minisgs.xml;aircraft/p51d/p51d.xml;aircraft/pa28/pa28.xml;aircraft/pc7/pc7.xml;aircraft/sgs126/sgs126.xml;aircraft/t6texan2/t6texan2.xml,483,False,False
+b7b83cce,2006-02-26,model,Fix for legacy flaps reference and extra Cnb,aircraft/f22/f22.xml,10,False,False
+94330b33,2006-01-24,model,Fixes from Mathias.,aircraft/A380/A380.xml;engine/TRENT-900.xml,76,False,False
+c8c21e75,2006-01-22,model,Fix the calculation of the normalized surface positions.,aircraft/f16/f16.xml,59,False,False
+5788d6e9,2006-01-02,cpp,Fixed off-standard temperature effects to work with externally-driven atmosphere.,src/models/FGAtmosphere.cpp;src/models/FGAtmosphere.h,176,False,False
+12b1c8f1,2005-12-30,model,mach norm fix ... again,aircraft/B747/B747.xml,6,False,False
+73137e37,2005-12-17,cpp,Long-awaited fix for landing gear jitter. This is a preliminary fix. Tweaks needed. There also appears to be a strange left drift that is of unknown origin. May be from EOM problem. May be precision. Who knows at this point.,src/models/FGLGear.cpp,34,False,False
+1968ac61,2005-12-16,model,Fix ground contact points,aircraft/sgs233/sgs233.xml,55,False,False
+eb05b342,2005-12-03,cpp,Fix to the Kinemat component,src/models/flight_control/FGKinemat.cpp,8,False,False
+32a7879a,2005-12-03,model,Fix to the F-16 model,aircraft/f16/f16.xml,67,False,False
+7fc4380d,2005-12-03,cpp,"IMPORTANT fix to kinemat component, which I broke earlier",src/models/flight_control/FGKinemat.cpp,6,False,False
+809023f7,2005-12-03,cpp,Fix to aerosurface scale component for proper scaling across the zero point,src/models/flight_control/FGGain.cpp,7,False,False
+d70e114a,2005-11-12,cpp,Added Jiri Javurek's propeller mods (for reversible prop and feathered prop) fixes in FGPropeller,src/models/propulsion/FGPropeller.cpp;src/models/propulsion/FGPropeller.h,69,False,False
+518fd7f8,2005-11-12,cpp,Fixed an initialization bug in FGTable,src/math/FGTable.cpp,8,False,False
+a67599d1,2005-09-18,cpp,Added thrust as a property to turbine engine model for cure to bug ID 1079202,src/models/propulsion/FGTurbine.cpp;src/models/propulsion/FGTurbine.h,15,False,False
+d6254195,2005-09-17,cpp,Fixed strange bug (extraneous N2Norm term) in Turbine model,src/models/propulsion/FGTurbine.cpp;src/models/propulsion/FGTurbine.h,13,False,False
+deea589a,2005-09-10,cpp,Adjusted some error handling code,src/models/FGFCS.cpp;src/models/flight_control/FGFCSComponent.cpp,17,False,False
+dd49f511,2005-07-03,cpp,Fixed last thing - now works,src/models/FGLGear.cpp,5,False,False
+e135d4cb,2004-12-19,model,Fixed aero coeff factor,aircraft/f16/f16.xml,6,False,False
+f746d469,2004-09-09,model,"Oops, something went wrong obviously.",engine/PT6A-27.xml,4,False,False
+973b459d,2004-07-03,model,"fixed ending tag; tweaks to thrust, tsfc, bpr",engine/CF6-80C2.xml,20,False,False
+d099bd24,2004-06-20,model,Fixed RB211 engine,engine/RB211-524.xml,5,False,False
+901049d1,2004-02-06,model,Fix a mistake which prevented the rudder from working properly,aircraft/T37/T37.xml;aircraft/f16/f16.xml,15,False,False
+d6c0dcc3,2003-03-24,model,Brown paperbag fix,aircraft/f16/f16.xml,40,False,False
+932b393f,2003-03-14,model,Fixed gear locations,aircraft/shuttle/shuttle.xml,14,False,False
+ee7a299e,2003-02-23,model,Damper updates and small fixes,aircraft/f16/f16.xml,12,False,False
+c24175e8,2003-02-12,model,Latest 737 and T38 by David Culp. Fix to SGS config file,aircraft/737/737.xml;aircraft/SGS/SGS.xml;aircraft/t38/t38.xml;engine/CFM56.xml;engine/J85-GE-5.xml,529,False,False
+8cd2e10a,2002-09-11,model,More fixes.  It trims now.,aircraft/f16/f16.xml,24,False,False
+8d320ccb,2002-05-31,model,"New version of PA-28 Cherokee file, with fix as pointed out by Tony Peden",aircraft/pa28/pa28.xml,80,False,False
+adf3b50a,2002-03-01,model,"Fixed a boo-boo.  Thanks, Jon.",aircraft/c172/c172.xml,12,False,False
+3c6713cc,2002-02-06,model,Fixed overly large side force due to rudder term.  Slip-skid indicator will go the correct direction now!,aircraft/c172/c172.xml,6,False,False
+4e884ac2,2002-02-03,model,"Fixed Cyb, removed engine yaw.",aircraft/c172/c172.xml,10,False,False
+1b896e5f,2002-01-22,model,"Fixed directional stability table, tuned engine yaw for cruise (105 kts @ 8000 ft)",aircraft/c172/c172.xml,10,False,False
+386bef15,2002-01-04,model,Fixed an oops.,aircraft/c172/c172.xml,8,False,False
+20294172,2001-12-24,model,Added pitch fields to all fixed-pitch propellers.,engine/prop30FP2B.xml;engine/prop_75in2f.xml;engine/prop_generic2f.xml,12,False,False
+acd76188,2001-12-21,model,"Custom-fix propeller model for a C172R (no mod kit).  This propeller is a kludge - it causes the C172 model to hit some published performance targets, but may be covering up bugs elsewhere in the model.  It should be replaced with real data as soon as any is available.",engine/prop_75in2f.xml,44,False,False
+7d3a06cf,2001-12-17,model,Fixed thruster and engine positions.,aircraft/c310/c310.xml,28,False,False
+111a527c,2001-12-17,model,Fixed sign error,aircraft/c172/c172.xml,12,False,False
+3674b30e,2001-11-21,model,Fixed engine and prop locations,aircraft/c172/c172.xml,12,False,False
+d3362f92,2001-10-30,model,Fixed extraneous gear value in config file,aircraft/c172/c172.xml,17,False,False
+d859f0ed,2001-07-30,model,Fixed engine horsepower values,engine/engIO360C.xml,4,False,False
+65158679,2001-04-08,model,Fixed the pitching moment at flaps 30,aircraft/c172/c172.xml,6,False,False
+561fd9f5,2001-04-06,model,Fixed X-15 gear friction coefficient,aircraft/X15/X15.xml,6,False,False
+f4a455da,2000-10-03,model,** JSB ** Fixes to config files for gear read,aircraft/X15/X15.xml;aircraft/c172/c172.xml,8,False,False
+872a7d55,2000-08-30,model,AKP fixed bad multiplier spec in CDDe,aircraft/c172/c172.cfg,4,False,False
+a7ed13f1,2000-04-03,model,Fixed cfg file for X15 (Version),aircraft/X15/X15.cfg,4,False,False

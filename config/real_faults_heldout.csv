@@ -1,0 +1,29 @@
+sha,kind,decision,label,aircraft,reason
+c8af9244,cpp,keep,B2_turbine_throttle_init_c8af9244,all,turbine engine state ThrottlePos left uninitialised at construction; turbine engines are used by the jets
+20066483,cpp,keep,B2_turbine_thruster_inputs_20066483,all,turbine thruster computed from stale inputs (inputs loaded after the thrust call); turbine engines are used by the jets
+8a9fba1c,cpp,keep,B2_wheel_spin_down_8a9fba1c,all,wheel rotation speed spun down while the wheel is on the ground; landing gear is used by every aircraft (the commit also reflows the licence comment)
+f543d634,cpp,keep,B2_sensor_fail_stuck_f543d634,all,sensor output wrong when the fail_stuck failure is set; sensors are used by the Cessna 310 and Global 5000
+61f1e8c3,cpp,keep,B2_atmosphere_high_altitude_61f1e8c3,all,standard-atmosphere temperature differs above 91 km; the atmosphere is used by every aircraft
+c3fa7d22,cpp,keep,B2_load_factor_sign_c3fa7d22,all,sign of the load factor inverted; the property is read by the Camel model and by load-factor trims
+82cc3893,cpp,keep,B2_propeller_inflow_angle_82cc3893,all,propeller blade-element inflow angle ignores the induced velocity; propellers are used by the piston and turboprop aircraft
+05b709c8,cpp,keep,B2_atmosphere_gradient_fadeout_05b709c8,all,temperature delta gradient not faded out above the fade-out altitude; the atmosphere is used by every aircraft
+3be71976,model,keep,B2_A4_gear_retractable_3be71976,A4,A-4 landing gear declared with a non-numeric retractable flag (gear not retractable)
+75b9b1e8,model,keep,B2_Boeing314_aero_props_75b9b1e8,Boeing314,Boeing 314 aerodynamic functions read the wrong properties (normalised lift squared and Mach; flap control output)
+5306a18b,model,keep,B2_holdback_thrust_prop_5306a18b,F4N,holdback system reads a thrust property name that no longer exists; the holdback system is used by the F-4N
+95e5a16b,model,keep,B2_systems_xml_validation_95e5a16b,F4N;c310;global5000;Short_S23,system files that fail XML validation: the yaw FCS clip element is ignored (F-4N) and a heading entity is used in GNC utilities (Cessna 310; Global 5000); documentation tags in the Short S.23 autopilot and hydrodynamics
+464e5915,cpp,exclude,,,gas cells are used by none of the 25 aircraft
+95b4c866,cpp,exclude,,,the climb-rate initial-condition getter feeds only a reported property and an unused trim-analysis path; no computation of the flight state reads it
+bc62d30c,cpp,exclude,,,linear actuators are used by none of the 25 aircraft
+4595a186,cpp,exclude,,,magnetometers are used by none of the 25 aircraft
+113e4a9e,cpp,exclude,,,the product-of-inertia getter feeds only a reported property; the dynamics use the inertia matrix directly
+fd1ed150,cpp,exclude,,,the P-factor moments are only written to the text output
+44469113,model,exclude,,,number written in exponent notation; the parsed value is the same
+2f9d7a2a,model,exclude,,,documentation tag renamed; no behavioural change
+ece80216,model,exclude,,,documentation tag renamed; no behavioural change; planing systems used by none of the 25 aircraft
+47cf185c,model,exclude,,,not a fix: adds a helical Mach table (the message matched on 'fixed pitch')
+467b5d85,model,exclude,,,prop_PT6 is used by none of the 25 aircraft
+5435d7e8,model,exclude,,,the Dr.I model is not among the 25 aircraft
+702c7d4d,model,exclude,,,the J246 model is not among the 25 aircraft
+0b70efee,model,exclude,,,not a fix (adds a test case); accelerometers system used by none of the 25 aircraft
+5ad2694c,cpp,development,B_pqrdot_5ad2694c,all,development set
+8819410c,model,development,B_elevator_drag_8819410c,17 aircraft,development set

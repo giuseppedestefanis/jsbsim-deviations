@@ -1,0 +1,378 @@
+diff --git a/systems/FCS-yaw.xml b/systems/FCS-yaw.xml
+index fc3351f5..8ce2359f 100644
+--- a/systems/FCS-yaw.xml
++++ b/systems/FCS-yaw.xml
+@@ -7,10 +7,10 @@
+    <summer name="Rudder Command Sum">
+       <input>fcs/rudder-cmd-norm</input>
+       <input>fcs/yaw-trim-cmd-norm</input>
+-      <limit>
++      <clipto>
+         <min> -1.0 </min>
+         <max>  1.0 </max>
+-      </limit>
++      </clipto>
+    </summer>
+ 
+    <scheduled_gain name="Yaw Damper Rate">
+@@ -38,10 +38,10 @@
+    <summer name="Yaw Damper Sum">
+       <input>fcs/yaw-damper-beta</input>
+       <input>fcs/yaw-damper-rate</input>
+-      <limit>
++      <clipto>
+         <min> -0.1 </min>
+         <max>  0.1 </max>
+-      </limit>
++      </clipto>
+    </summer>
+ 
+    <scheduled_gain name="Yaw Damper Final">
+@@ -58,10 +58,10 @@
+    <summer name="Rudder Sum">
+       <input>fcs/rudder-command-sum</input>
+       <input>fcs/yaw-damper-final</input>
+-      <limit>
++      <clipto>
+         <min> -1 </min>
+         <max>  1 </max>
+-      </limit>
++      </clipto>
+    </summer>
+ 
+    <aerosurface_scale name="Rudder Control">
+diff --git a/systems/GNCUtilities.xml b/systems/GNCUtilities.xml
+index 5d1e4f4b..01b67bf8 100644
+--- a/systems/GNCUtilities.xml
++++ b/systems/GNCUtilities.xml
+@@ -74,7 +74,7 @@
+     <switch name="guidance/selected_target_heading">
+       <default value="guidance/wp-heading-rad"/>
+       <test value="guidance/specified-heading-rad">
+-        guidance/heading-selector-switch eq &specifiedHeading;
++        guidance/heading-selector-switch eq 1
+       </test>
+     </switch>
+ 
+diff --git a/systems/SensorImu.xml b/systems/SensorImu.xml
+index 1e5497b5..e5a33b7c 100644
+--- a/systems/SensorImu.xml
++++ b/systems/SensorImu.xml
+@@ -250,16 +250,6 @@
+ 
+             <axis>X</axis>
+ 
+-            <location unit="M">
+-
+-                <x>0</x>
+-
+-                <y>0</y>
+-
+-                <z>0</z>
+-
+-            </location>
+-
+             <orientation unit="DEG">
+ 
+                 <roll>0</roll>
+@@ -290,16 +280,6 @@
+ 
+             <axis>Y</axis>
+ 
+-            <location unit="M">
+-
+-                <x>0</x>
+-
+-                <y>0</y>
+-
+-                <z>0</z>
+-
+-            </location>
+-
+             <orientation unit="DEG">
+ 
+                 <roll>0</roll>
+@@ -330,16 +310,6 @@
+ 
+             <axis>Z</axis>
+ 
+-            <location unit="M">
+-
+-                <x>0</x>
+-
+-                <y>0</y>
+-
+-                <z>0</z>
+-
+-            </location>
+-
+             <orientation unit="DEG">
+ 
+                 <roll>0</roll>
+diff --git a/systems/airship-mooring.xml b/systems/airship-mooring.xml
+index c66b1551..a446661b 100644
+--- a/systems/airship-mooring.xml
++++ b/systems/airship-mooring.xml
+@@ -22,7 +22,7 @@
+ -->
+ <system name="airship-mooring">
+ 
+- <documentation>
++ <description>
+   This system models a mast mooring system with a mooring cone connection
+   and a mooring wire. The mooring cone MUST be located at the aircraft's
+   visual reference point (VRP).
+@@ -90,7 +90,7 @@
+        mooring/longitude-deg
+        mooring/altitude-ft
+ 
+- </documentation>
++ </description>
+ 
+  <!-- INTERFACE PROPERTIES -->
+ 
+diff --git a/systems/airship_added_mass.xml b/systems/airship_added_mass.xml
+index bb0a059d..80492bc6 100644
+--- a/systems/airship_added_mass.xml
++++ b/systems/airship_added_mass.xml
+@@ -21,7 +21,7 @@
+ -->
+ <system name="added-mass">
+ 
+- <documentation>
++ <description>
+   This system computes forces and moments due to added/virtual mass.
+   The model is based on
+   [Max M. Munk, "Aerodynamic forces on airship hulls", NACA report 184, 1924]
+@@ -123,7 +123,7 @@
+      </direction>
+     </force>
+ 
+- </documentation>
++ </description>
+ 
+  <channel name="startup">
+ 
+diff --git a/systems/fg_glue.xml b/systems/fg_glue.xml
+deleted file mode 100644
+index fac7c0fc..00000000
+--- a/systems/fg_glue.xml
++++ /dev/null
+@@ -1,5 +0,0 @@
+-<!--
+-  RPM-Mapper (dummy for jsbsim)
+-  -->
+-
+-<system name="rpm mapper"/>
+diff --git a/systems/hydrodynamics.xml b/systems/hydrodynamics.xml
+index 6c07ec02..c908843c 100644
+--- a/systems/hydrodynamics.xml
++++ b/systems/hydrodynamics.xml
+@@ -22,7 +22,7 @@
+ -->
+ <system name="hydrodynamics">
+ 
+- <documentation>
++ <description>
+   This system computes forces and moments due to the hull's interaction
+   with water, both hydrostatic and hydrodynamic, with respect to the
+   hydrodynamic reference point (HRP).
+@@ -191,7 +191,7 @@
+      </direction>
+     </force>
+ 
+- </documentation>
++ </description>
+ 
+  <!-- Inputs -->
+ 
+@@ -229,10 +229,10 @@
+  <channel name ="Hull position">
+ 
+   <fcs_function name="hydro/height-agl-ft">
+-   <documentation>
++   <description>
+     Distance between the hydrodynamic reference point and the water surface.
+     Not completely correctly computed yet.
+-   </documentation>
++   </description>
+    <function>
+     <difference>
+      <sum>
+diff --git a/systems/sperry-a2-autopilot.xml b/systems/sperry-a2-autopilot.xml
+index 2c055990..f3ada477 100644
+--- a/systems/sperry-a2-autopilot.xml
++++ b/systems/sperry-a2-autopilot.xml
+@@ -22,7 +22,7 @@
+ -->
+ <system name="Sperry A-2 automatic pilot">
+ 
+- <documentation>
++ <description>
+   This system models a Sperry A-2 automatic pilot system.
+ 
+   For each channel a pneumatic mechanism is activated when there is a
+@@ -40,7 +40,7 @@
+   - The available oil pressure probably affects the maximum rate of change
+     for the actuator.
+   - The JSBSim actuator component in each channel is probably redundant.
+- </documentation>
++ </description>
+ 
+  <!-- Interface properties -->
+ 
+diff --git a/systems/visual-reference-point-extensions.xml b/systems/visual-reference-point-extensions.xml
+index f7ff7c0d..3d27c54a 100644
+--- a/systems/visual-reference-point-extensions.xml
++++ b/systems/visual-reference-point-extensions.xml
+@@ -25,10 +25,10 @@
+  <channel name="position">
+ 
+   <fcs_function name="position/vrp-cg-altitude-offset-ft">
+-   <documentation>
++   <description>
+     Altitude offset of the visual reference point w.r.t. the centre of gravity.
+     FIXME: Verify the roll dependence.
+-   </documentation>
++   </description>
+    <function>
+     <sum>
+      <product>
+@@ -76,9 +76,9 @@
+   </fcs_function>
+ 
+   <fcs_function name="position/vrp-altitude-ft">
+-   <documentation>
++   <description>
+     Altitude of the visual reference point.
+-   </documentation>
++   </description>
+    <function>
+     <sum>
+      <property>position/h-sl-ft</property>
+@@ -88,9 +88,9 @@
+   </fcs_function>
+ 
+   <fcs_function name="position/vrp-altitude-agl-ft">
+-   <documentation>
++   <description>
+     Distance between the visual reference point and the ground surface.
+-   </documentation>
++   </description>
+    <function>
+     <sum>
+      <property>position/h-agl-ft</property>
+@@ -100,13 +100,13 @@
+   </fcs_function>
+ 
+   <fcs_function name="position/vrp-latitude-deg">
+-   <documentation>
++   <description>
+     Latitude of the visual reference point.
+ 
+     Based on the geocentric to geodetic conversion
+       vrp-latitude-deg = atan(tan(vrp-gc-latitude_deg)/(1-f)^2))
+     where for WGS 84 f = 1.0/298.25722.
+-   </documentation>
++   </description>
+    <function>
+     <product>
+      <value>57.29578</value>
+@@ -126,22 +126,22 @@
+   </fcs_function>
+ 
+   <fcs_function name="position/vrp-longitude-deg">
+-   <documentation>
++   <description>
+     Longitude of the visual reference point.
+-   </documentation>
++   </description>
+    <function>
+     <property>position/vrp-longitude_deg</property>
+    </function>
+   </fcs_function>
+ 
+   <fcs_function name="position/latitude-unit-distance-ft_deg">
+-   <documentation>
++   <description>
+     Feet per degree of latitude at the present position.
+ 
+     The conversion is based on
+     http://gis.stackexchange.com/questions/75528/length-of-a-degree-where-do-the-terms-in-this-formula-come-from
+     but further truncated.
+-   </documentation>
++   </description>
+    <function>
+     <product>
+      <value>3.2808399</value>
+@@ -164,13 +164,13 @@
+   </fcs_function>
+ 
+   <fcs_function name="position/longitude-unit-distance-ft_deg">
+-   <documentation>
++   <description>
+     Feet per degree of longitude at the present position.
+ 
+     The conversion is based on
+     http://gis.stackexchange.com/questions/75528/length-of-a-degree-where-do-the-terms-in-this-formula-come-from
+     but further truncated.
+-   </documentation>
++   </description>
+    <function>
+     <product>
+      <value>3.2808399</value>
+@@ -209,8 +209,6 @@
+   -->
+ 
+   <pid name="velocities/vrp-v-north-deg_sec">
+-   <documentation>
+-   </documentation>
+    <input>position/vrp-latitude-deg</input>
+    <kp>0.0</kp>
+    <ki>0.0</ki>
+@@ -218,11 +216,11 @@
+   </pid>
+ 
+   <fcs_function name="velocities/vrp-v-north-fps">
+-   <documentation>
++   <description>
+     The conversion from degrees of latitude per second to ft/sec is based on
+     http://gis.stackexchange.com/questions/75528/length-of-a-degree-where-do-the-terms-in-this-formula-come-from
+     but further truncated.
+-   </documentation>
++   </description>
+    <function>
+     <product>
+      <property>position/latitude-unit-distance-ft_deg</property>
+@@ -232,8 +230,6 @@
+   </fcs_function>
+ 
+   <pid name="velocities/vrp-v-east-deg_sec">
+-   <documentation>
+-   </documentation>
+    <input>position/vrp-longitude-deg</input>
+    <kp>0.0</kp>
+    <ki>0.0</ki>
+@@ -241,11 +237,11 @@
+   </pid>
+ 
+   <fcs_function name="velocities/vrp-v-east-fps">
+-   <documentation>
++   <description>
+     The conversion from degrees of longitude per second to ft/sec is based on
+     http://gis.stackexchange.com/questions/75528/length-of-a-degree-where-do-the-terms-in-this-formula-come-from
+     but further truncated.
+-   </documentation>
++   </description>
+    <function>
+     <product>
+      <property>position/longitude-unit-distance-ft_deg</property>
+@@ -255,8 +251,6 @@
+   </fcs_function>
+ 
+   <pid name="velocities/vrp-v-down-fps">
+-   <documentation>
+-   </documentation>
+    <input>position/vrp-altitude-ft</input>
+    <kp>0.0</kp>
+    <ki>0.0</ki>

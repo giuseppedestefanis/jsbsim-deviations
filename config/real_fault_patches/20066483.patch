@@ -1,0 +1,12 @@
+diff --git a/src/models/propulsion/FGTurbine.cpp b/src/models/propulsion/FGTurbine.cpp
+index f9b00129..fce3c71a 100644
+--- a/src/models/propulsion/FGTurbine.cpp
++++ b/src/models/propulsion/FGTurbine.cpp
+@@ -163,6 +163,7 @@ void FGTurbine::Calculate(void)
+     default: thrust = Off();
+   }
+ 
++  LoadThrusterInputs();
+   Thruster->Calculate(thrust); // allow thruster to modify thrust (i.e. reversing)
+ 
+   RunPostFunctions();

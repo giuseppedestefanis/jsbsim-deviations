@@ -1,0 +1,40 @@
+{
+ "cases": [
+  {
+   "aircraft": "737",
+   "test_case": "elev_doublet",
+   "rows": 301,
+   "columns": 45,
+   "bit_identical": true
+  },
+  {
+   "aircraft": "c172p",
+   "test_case": "throttle_step",
+   "rows": 601,
+   "columns": 44,
+   "bit_identical": true
+  },
+  {
+   "aircraft": "f16",
+   "test_case": "aileron_step",
+   "rows": 301,
+   "columns": 44,
+   "bit_identical": true
+  },
+  {
+   "aircraft": "c310",
+   "test_case": "engine_cut",
+   "rows": 401,
+   "columns": 47,
+   "bit_identical": true
+  },
+  {
+   "aircraft": "A320",
+   "test_case": "cruise",
+   "rows": 601,
+   "columns": 45,
+   "bit_identical": true
+  }
+ ],
+ "all_identical": true
+}

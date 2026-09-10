@@ -1,0 +1,82 @@
+{
+  "tier_b": {
+    "c172x": {
+      "cls": "light",
+      "h_ft": 5000,
+      "vc_kts": 100,
+      "trim": "analytic",
+      "root": null
+    },
+    "c310": {
+      "cls": "light",
+      "h_ft": 5000,
+      "vc_kts": 100,
+      "trim": "settle",
+      "n_engines": 2,
+      "root": null
+    },
+    "global5000": {
+      "cls": "bizjet",
+      "h_ft": 20000,
+      "vc_kts": 250,
+      "trim": "analytic",
+      "n_engines": 2,
+      "root": "results/variants/global5000ap_base"
+    },
+    "737": {
+      "cls": "airliner",
+      "h_ft": 20000,
+      "vc_kts": 280,
+      "trim": "analytic",
+      "n_engines": 2,
+      "root": "results/variants/737ap_base"
+    }
+  },
+  "missions": [
+    "climb_cruise_descend",
+    "approach"
+  ],
+  "note": "737 uses the 737ap_base variant root (Global 5000 autopilot attached)",
+  "ah1s_phases": [
+    [
+      0,
+      "liftoff"
+    ],
+    [
+      15,
+      "hover"
+    ],
+    [
+      120,
+      "accelerate"
+    ],
+    [
+      234,
+      "climb"
+    ],
+    [
+      325,
+      "fast_cruise"
+    ],
+    [
+      900,
+      "climb_8000"
+    ],
+    [
+      1200,
+      "descend_5000"
+    ],
+    [
+      1500,
+      "cruise"
+    ],
+    [
+      2800,
+      "end"
+    ]
+  ],
+  "ah1s": {
+    "script": "scripts/ah1s_flight_test.xml",
+    "note": "stock flight test; later autorotation events do not fire in the stock run; phases by time from the event log"
+  }
+}

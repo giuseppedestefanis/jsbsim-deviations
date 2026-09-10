@@ -1,0 +1,12 @@
+diff --git a/src/models/propulsion/FGTurbine.cpp b/src/models/propulsion/FGTurbine.cpp
+index f73f2f75..661eac5f 100644
+--- a/src/models/propulsion/FGTurbine.cpp
++++ b/src/models/propulsion/FGTurbine.cpp
+@@ -78,6 +78,7 @@ FGTurbine::FGTurbine(FGFDMExec* exec, Element *el, int engine_number, struct Inp
+   InjectionTimer = InjWaterNorm = 0.0;
+   EPR = 1.0;
+   disableWindmill = false;
++  ThrottlePos = 0.0;
+ 
+   Load(exec, el);
+   Debug(0);

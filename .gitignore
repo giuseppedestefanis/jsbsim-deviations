@@ -1,0 +1,37 @@
+.venv/
+.venv-*/
+__pycache__/
+*.pyc
+.DS_Store
+# generated runs, mutated model copies, JSBSim script outputs
+results/runs/
+results/variants/
+results/**/*.parquet
+/*.csv
+/*.sce
+/initfile*.xml
+/JSBout*.csv
+# the article is not part of this repository
+paper/
+
+results_still/runs/
+results_still/variants/
+results_still/tables/
+results_still/figures/
+results_old/
+results_pass2/
+results/*.done
+results_still/*.done
+results/*.log
+results_still/*.log
+results/19_analysis_early.log
+skills/
+audit/
+# local backups and intermediate folders, not part of the package
+results_cov/
+results_pass3_wrapped/
+results_pre_as2007/
+results/heldout_list.txt
+results_still/heldout_list.txt
+results/*_pre_audit.csv
+results_still/*_pre_audit.csv

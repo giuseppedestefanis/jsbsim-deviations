@@ -1,0 +1,5 @@
+method,variant,n_flagged,false_alarm,recall,precision,auc,es_max,n_gated,gated_recall,gated_auc,flagged
+regression,noop,2,0.09090909090909091,,,,,,,,
+regression,B_ground_effect_9c058118,9,,0.3076923076923077,0.4444444444444444,0.4273504273504274,1.9720168414612367,2.0,1.0,1.0,velocities/p-rad_sec;velocities/q-rad_sec;velocities/r-rad_sec;velocities/h-dot-fps;accelerations/pdot-rad_sec2;accelerations/rdot-rad_sec2;accelerations/udot-ft_sec2;accelerations/vdot-ft_sec2;accelerations/wdot-ft_sec2
+envelope,noop,0,0.0,,,,,,,,
+envelope,B_ground_effect_9c058118,12,,0.5384615384615384,0.5833333333333334,0.44017094017094016,1.9720168414612367,2.0,1.0,0.8250000000000001,position/h-sl-ft;position/h-agl-ft;velocities/p-rad_sec;velocities/q-rad_sec;velocities/r-rad_sec;velocities/h-dot-fps;accelerations/pdot-rad_sec2;accelerations/qdot-rad_sec2;accelerations/rdot-rad_sec2;accelerations/udot-ft_sec2;accelerations/vdot-ft_sec2;accelerations/wdot-ft_sec2

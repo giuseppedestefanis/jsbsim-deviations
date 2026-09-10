@@ -1,0 +1,5 @@
+method,variant,n_flagged,false_alarm,recall,precision,auc,es_max,n_gated,flagged
+regression,noop,3,0.13636363636363635,,,,,,
+regression,B_ground_effect_9c058118,1,,0.0,0.0,0.17094017094017094,0.5097823418393485,0.0,velocities/v-fps
+envelope,noop,0,0.0,,,,,,
+envelope,B_ground_effect_9c058118,1,,0.0,0.0,0.017094017094017103,0.5097823418393485,0.0,attitude/psi-rad

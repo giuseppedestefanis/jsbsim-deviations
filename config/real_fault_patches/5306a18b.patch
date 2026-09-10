@@ -1,0 +1,20 @@
+diff --git a/systems/holdback.xml b/systems/holdback.xml
+index 67374a27..1f6e2dff 100644
+--- a/systems/holdback.xml
++++ b/systems/holdback.xml
+@@ -2,11 +2,13 @@
+ 
+ <system name="holdback">
+ 
++  <property value="0">systems/holdback/holdback-cmd</property>
++
+   <channel name="Holdback_Launchbar">
+ 
+      <summer name="systems/holdback/total_thrust">
+-        <input>propulsion/engine/thrust</input>
+-        <input>propulsion/engine[1]/thrust</input>
++        <input>propulsion/engine/thrust-lbs</input>
++        <input>propulsion/engine[1]/thrust-lbs</input>
+      </summer>
+ 
+      <switch name="systems/holdback/switch">

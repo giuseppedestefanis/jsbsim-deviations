@@ -1,0 +1,203 @@
+{
+  "generated_from": "results/01_screen_tier_a.csv",
+  "date": "2026-09-10",
+  "tier_a": {
+    "737": {
+      "cls": "airliner",
+      "h_ft": 20000,
+      "vc_kts": 280,
+      "trim": "analytic",
+      "n_engines": 2
+    },
+    "787-8": {
+      "cls": "airliner",
+      "h_ft": 20000,
+      "vc_kts": 280,
+      "trim": "analytic",
+      "n_engines": 2
+    },
+    "A320": {
+      "cls": "airliner",
+      "h_ft": 20000,
+      "vc_kts": 280,
+      "trim": "analytic",
+      "n_engines": 2
+    },
+    "A4": {
+      "cls": "fighter",
+      "h_ft": 20000,
+      "vc_kts": 350,
+      "trim": "analytic",
+      "n_engines": 1
+    },
+    "B747": {
+      "cls": "airliner",
+      "h_ft": 20000,
+      "vc_kts": 280,
+      "trim": "analytic",
+      "n_engines": 4
+    },
+    "Boeing314": {
+      "cls": "vintage",
+      "h_ft": 5000,
+      "vc_kts": 120,
+      "trim": "settle",
+      "n_engines": 4
+    },
+    "Camel": {
+      "cls": "vintage",
+      "h_ft": 3000,
+      "vc_kts": 80,
+      "trim": "analytic",
+      "n_engines": 1
+    },
+    "F4N": {
+      "cls": "fighter",
+      "h_ft": 20000,
+      "vc_kts": 350,
+      "trim": "analytic",
+      "n_engines": 2
+    },
+    "F80C": {
+      "cls": "fighter",
+      "h_ft": 10000,
+      "vc_kts": 300,
+      "trim": "analytic",
+      "n_engines": 1
+    },
+    "J3Cub": {
+      "cls": "cub",
+      "h_ft": 2000,
+      "vc_kts": 60,
+      "trim": "analytic",
+      "n_engines": 1
+    },
+    "MD11": {
+      "cls": "airliner",
+      "h_ft": 20000,
+      "vc_kts": 280,
+      "trim": "analytic",
+      "n_engines": 3
+    },
+    "OV10": {
+      "cls": "turboprop",
+      "h_ft": 10000,
+      "vc_kts": 180,
+      "trim": "analytic",
+      "n_engines": 2
+    },
+    "Short_S23": {
+      "cls": "vintage",
+      "h_ft": 3000,
+      "vc_kts": 80,
+      "trim": "settle",
+      "n_engines": 4
+    },
+    "T37": {
+      "cls": "trainer",
+      "h_ft": 10000,
+      "vc_kts": 200,
+      "trim": "analytic",
+      "n_engines": 2
+    },
+    "T38": {
+      "cls": "fighter",
+      "h_ft": 20000,
+      "vc_kts": 350,
+      "trim": "analytic",
+      "n_engines": 2
+    },
+    "c172p": {
+      "cls": "light",
+      "h_ft": 5000,
+      "vc_kts": 100,
+      "trim": "analytic",
+      "n_engines": 1
+    },
+    "c172r": {
+      "cls": "light",
+      "h_ft": 5000,
+      "vc_kts": 100,
+      "trim": "analytic",
+      "n_engines": 1
+    },
+    "c182": {
+      "cls": "light",
+      "h_ft": 5000,
+      "vc_kts": 100,
+      "trim": "settle",
+      "n_engines": 1
+    },
+    "c310": {
+      "cls": "light",
+      "h_ft": 5000,
+      "vc_kts": 100,
+      "trim": "settle",
+      "n_engines": 2
+    },
+    "f15": {
+      "cls": "fighter",
+      "h_ft": 20000,
+      "vc_kts": 350,
+      "trim": "analytic",
+      "n_engines": 2
+    },
+    "f16": {
+      "cls": "fighter",
+      "h_ft": 20000,
+      "vc_kts": 350,
+      "trim": "analytic",
+      "n_engines": 1
+    },
+    "global5000": {
+      "cls": "bizjet",
+      "h_ft": 20000,
+      "vc_kts": 250,
+      "trim": "analytic",
+      "n_engines": 2
+    },
+    "pa28": {
+      "cls": "light",
+      "h_ft": 5000,
+      "vc_kts": 100,
+      "trim": "settle",
+      "n_engines": 1
+    },
+    "pc7": {
+      "cls": "turboprop",
+      "h_ft": 5000,
+      "vc_kts": 130,
+      "trim": "settle",
+      "n_engines": 1
+    },
+    "t6texan2": {
+      "cls": "turboprop",
+      "h_ft": 10000,
+      "vc_kts": 180,
+      "trim": "analytic",
+      "n_engines": 1
+    }
+  },
+  "excluded": {
+    "B17": "no stable trim found: settle: not settled dh=740 dv=47.6 phi=1.2 off_h=3997 off_v=",
+    "C130": "turboprop engines produce no thrust with generic start sequence",
+    "Concorde": "exotic flight envelope; no trim found on generic grid",
+    "DHC6": "no stable trim found: settle: trimmed at 8000/110 but altitude drift -520 ft",
+    "L17": "broken property reference in stock model XML",
+    "L410": "turboprop engines produce no thrust with generic start sequence",
+    "SGS": "no engine (glider)",
+    "X15": "exotic flight envelope; no trim found on generic grid",
+    "XB-70": "exotic flight envelope; no trim found on generic grid",
+    "c172x": "Tier B only (autopilot); rolls 30-46 deg under pitch doublet, redundant with c172p/c172r",
+    "dr1": "broken property reference in stock model XML",
+    "f104": "broken property reference in stock model XML",
+    "f22": "exotic flight envelope; no trim found on generic grid",
+    "fokker100": "broken property reference in stock model XML",
+    "fokker50": "broken property reference in stock model XML",
+    "minisgs": "no engine (glider)",
+    "p51d": "no stable trim found: settle: not settled dh=0 dv=0.0 phi=11.1 off_h=1999 off_v=37",
+    "paraglider": "exotic flight envelope; no trim found on generic grid",
+    "sgs126": "no engine (glider)",
+    "sgs233": "no engine (glider)"
+  }
+}

@@ -1,0 +1,16 @@
+diff --git a/src/models/atmosphere/FGStandardAtmosphere.cpp b/src/models/atmosphere/FGStandardAtmosphere.cpp
+index f53fe796..bcadf737 100644
+--- a/src/models/atmosphere/FGStandardAtmosphere.cpp
++++ b/src/models/atmosphere/FGStandardAtmosphere.cpp
+@@ -216,7 +216,10 @@ double FGStandardAtmosphere::GetTemperature(double altitude) const
+     T = StdAtmosTemperatureTable.GetValue(0.0) + GeoPotAlt*LapseRates[0];
+   }
+ 
+-  T += TemperatureBias + TemperatureDeltaGradient * GradientFadeoutAltitude;
++  T += TemperatureBias;
++
++  if (GeoPotAlt <= GradientFadeoutAltitude)
++    T += TemperatureDeltaGradient * GradientFadeoutAltitude;
+ 
+   return T;
+ }
